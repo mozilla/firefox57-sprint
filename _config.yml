@@ -2,7 +2,7 @@ title: WebCompat Firefox Campaign
 subtitle:
 email: community-development@mozilla.com
 twitter: https://twitter.com/mozilla
-baseurl: "/webcompat-things" # the subpath of your site, e.g. /blog
+baseurl: "/webcompat-thing" # the subpath of your site, e.g. /blog
 url: "https://mozilla.github.io" # the base hostname & protocol for your site
 github:
   repo: "michaelkohler/webcompat-thing"
