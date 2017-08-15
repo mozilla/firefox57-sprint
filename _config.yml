@@ -1,0 +1,30 @@
+title: WebCompat Firefox Campaign
+subtitle:
+email: community-development@mozilla.com
+twitter: https://twitter.com/mozilla
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mozilla.github.io" # the base hostname & protocol for your site
+github:
+  repo: "michaelkohler/webcompat-thing"
+  branch: "master"
+
+
+collections:
+  articles:
+    output: true
+    permalink: /:path/
+
+# Build settings
+markdown: kramdown
+
+redcarpet:
+  extensions: [
+    'no_intra_emphasis',
+    'fenced_code_blocks',
+    'autolink',
+    'strikethrough',
+    'superscript',
+    'with_toc_data',
+    'tables',
+    'hardwrap'
+  ]

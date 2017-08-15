@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+      <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
+      <meta name="description" content="{{ site.subtitle }}">
+      <link rel="icon" type="image/png" sizes="196x196" href="{{ site.baseurl }}/img/favicon.png?1">
+
+      <link href="{{ site.baseurl }}/css/mofo-bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab">
+    </head>
+
+    <body>
+
+      <div class="page container-fluid">
+        <div class="row">
+          {% assign post_count = site.posts|size %}
+          <div id="navigation" class="col-md-2 col-sm-3 col-xs-12 sidebar" role="navigation">
+            {% include navigation.html %}
+          </div>
+          <div id="content" class="col-md-10 col-sm-9 col-xs-12">
+            {{ content }}
+          </div>
+        </div>
+
+        <div class="row">
+        {% include footer.html %}
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+      <script>anchors.add('h3,h4');</script>
+
+    </body>
+</html>
