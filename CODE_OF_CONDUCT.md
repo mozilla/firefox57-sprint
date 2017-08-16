@@ -18,7 +18,3 @@ The Mozilla Project welcomes and encourages participation by everyone. It doesnâ
 We welcome contributions from everyone as long as they interact constructively with our community, including, but not limited to people of varied age, culture, ethnicity, gender, gender-identity, language, race, sexual orientation, geographical location and religious views.
 
 Mozilla-based activities should be inclusive and should support such diversity.
-
-## Working in the Open
-
-Because working open is one of our core values, MozFest program planning is done in the open on Github (check out our repo [here](https://github.com/MozillaFoundation/mozfest-program-2016)). We hope participants will benefit from this culture of transparency and collaboration during the Festival, and will continue to work with an open ethos in their projects after Mozfest. Learn more about [how we work open at Mozilla](https://wiki.mozilla.org/Working_open).

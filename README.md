@@ -1,4 +1,4 @@
-# Mozilla Webcompat (Firefox 57) Campaign - heavily under construction (website and program)
+# Firefox 57 WebCompat Campaign - heavily under construction (website and program)
 
 This project is based on https://mozilla.github.io/global-sprint/.
 
@@ -8,7 +8,7 @@ You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-
 
 1. `bundle install`
 2. `bundle exec jekyll serve`
-3. Open [http://localhost:4000/global-sprint](http://localhost:4000/global-sprint) in your favourite browser!
+3. Open [http://localhost:4000/webcompat](http://localhost:4000/webcompat) in your favourite browser!
 
 ## Contributing
 

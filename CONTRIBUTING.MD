@@ -1,8 +1,6 @@
-# Contributing to the Global Sprint website
+# Contributing to the fx-webcompat-campaign website
 
-Thank you for your interest in contributing to the Global Sprint website :tada:!
-
-This is the web presence for Mozilla's Global Sprint. June 1-2, 2017.
+Thank you for your interest in contributing to this website :tada:!
 
 This documents is a set of guidelines for contributing to this website on GitHub. These are guidelines, not rules. This guide is meant to make it easy for you to get involved.
 
@@ -36,4 +34,4 @@ This repository is currently maintained by [@MichaelKohler](http://github.com/Mi
 
 ## How to report bugs
 
-Notice a mistake? Please file any bugs, requests, or questions in [our issue tracker](https://github.com/MichaelKohler/webcompat-thing/issues)
+Notice a mistake? Please file any bugs, requests, or questions in [our issue tracker](https://github.com/mozilla/fx-webcompat-campaign/issues)
