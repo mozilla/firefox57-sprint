@@ -1,3 +1,8 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .home-card h1 {
   font-family: 'Zilla-Slab',sans-serif;
   font-size: 1.9rem;
@@ -49,11 +54,15 @@
   margin:0.5em 0 2em;
 }
 
+.home-page {
+  margin-bottom: 3rem;
+}
+
 .home-page .intro {
   text-align: center;
 }
 
-.lesson-content .intro p {
+.home-page .intro p {
   font-size: 1.3rem;
   line-height: 2rem;
 }
@@ -523,6 +532,12 @@ a.btn:hover {
   background: #85d1f3;
   border-color: #85d1f3;
   color: #000;
+}
+
+@media (max-width: 543px) {
+  .btn-xs-full {
+    width: 100%;
+  }
 }
 
 /* PASSING */
