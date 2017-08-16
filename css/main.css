@@ -21,7 +21,9 @@
 
 .hero-unit {
   text-align: center;
-  padding: 4em 1em 3em;
+  padding: 4em 1em 7em;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
 }
 
 .hero-unit h1 {
@@ -35,10 +37,11 @@
   background-color: black;
 }
 
-.hero-unit p {
+.hero-unit h2 {
   font-size: 2rem;
-  margin-top:1em;
-  color: black;
+  margin-top: 1em;
+  color: white;
+  font-weight: bold;
 }
 
 .intro {
