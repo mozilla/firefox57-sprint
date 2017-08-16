@@ -67,6 +67,10 @@
   line-height: 2rem;
 }
 
+.home-page .map {
+  margin-top: 3rem;
+}
+
 h2 {
   margin: 1rem 0;
   font-family: 'Zilla-Slab',sans-serif;
