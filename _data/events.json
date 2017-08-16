@@ -1,0 +1,42 @@
+{
+  "France": [
+    {
+      "locationName": "Mozilla Offices Paris",
+      "locationCity": "Paris",
+      "locationCountry": "France",
+      "locationCountryCode": "FR",
+      "organizer": "Somebody",
+      "signupLink": "https://www.mozilla.org"
+    }
+  ],
+
+  "Germany": [
+    {
+      "locationName": "Mozilla Offices Berlin",
+      "locationCity": "Berlin",
+      "locationCountry": "Germany",
+      "locationCountryCode": "DE",
+      "organizer": "Somebody",
+      "signupLink": "https://www.mozilla.org"
+    },
+    {
+      "locationName": "Some place in Munich",
+      "locationCity": "Munich",
+      "locationCountry": "Germany",
+      "locationCountryCode": "DE",
+      "organizer": "Somebody",
+      "signupLink": "https://www.mozilla.org"
+    }
+  ],
+
+  "United Kingdom": [
+    {
+      "locationName": "Mozilla Offices London",
+      "locationCity": "London",
+      "locationCountry": "United Kingdom",
+      "locationCountryCode": "UK",
+      "organizer": "Somebody",
+      "signupLink": "https://www.mozilla.org"
+    }
+  ]
+}
