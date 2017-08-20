@@ -123,40 +123,8 @@ a:hover edit:before {
   text-decoration: none;
 }
 
-.details time {
-  margin-top: 5px;
-}
-
-.details time, .details edit {
-  margin-bottom: 3px;
-  display: block;
-}
-
-time {
-  color: #2581B7;
-}
-
-.details time:before {
-  content: "\f017";
-  font-family: FontAwesome;
-  margin-right: 6px;
-}
-
-.video-player:before{
-  content: "\f16a";
-  font-family: FontAwesome;
-}
-
-.assignment:before{
-  content: "\f044";
-  font-family: FontAwesome;
-  margin-right: 6px;
-}
-
-h3 .assignment:before {
-  margin-right: 8px;
-  font-size: 1.75rem;
-
+.details {
+  margin-bottom: 2rem;
 }
 
 .suggest-changes {
