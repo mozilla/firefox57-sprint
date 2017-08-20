@@ -1,17 +1,21 @@
+h1 {
+  letter-spacing: 0;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
 }
 
 .home-card h1 {
-  font-family: 'Zilla-Slab',sans-serif;
+  font-family: 'Zilla Slab Highlight', sans-serif;
   font-size: 1.9rem;
-  color:#000;
+  color: #000;
 }
 
 .highlight {
   padding: 0.3em 0;
-  font-family: 'Zilla-Slab',sans-serif;
+  font-family: 'Zilla Slab', sans-serif;
   background-color: #88d1f1;
   font-weight:700;
   line-height: 1.9;
@@ -32,14 +36,13 @@
 }
 
 .hero-unit h1 {
-  color: white;
-  display: inline;
-  padding: .3em 0;
-  font-family: 'Zilla-Slab',sans-serif;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0;
-  background-color: black;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  font-family: 'Zilla Slab Highlight', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.4rem;
 }
 
 .hero-unit h2 {
@@ -73,7 +76,7 @@
 
 h2 {
   margin: 1rem 0;
-  font-family: 'Zilla-Slab',sans-serif;
+  font-family: 'Zilla Slab',sans-serif;
   color:black;
 }
 
@@ -86,7 +89,7 @@ h3 {
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 2rem;
-  font-family: 'Zilla-Slab',sans-serif;
+  font-family: 'Zilla Slab',sans-serif;
   color: #558194;
 }
 
@@ -266,11 +269,10 @@ html.no-js .sidebar .collapsible-content {
 }
 
 .sidebar-header span {
-  padding: 0.3em 0;
-  font-family: 'Zilla-Slab',sans-serif;
-  background-color: #88d1f1;
-  font-weight:700;
-  line-height: 1.9;
+  font-family: 'Zilla Slab Highlight', sans-serif;
+  color: #88d1f1;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .sidebar-header .glyphicon-menu-hamburger {
@@ -460,7 +462,7 @@ html.no-js .sidebar .collapsible-content {
 
 #content h4 {
   margin-top:1.6em;
-  font-family: 'Zilla-Slab',sans-serif;
+  font-family: 'Zilla Slab',sans-serif;
 
 }
 

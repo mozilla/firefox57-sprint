@@ -1,4 +1,4 @@
-# Firefox 57 WebCompat Campaign - heavily under construction (website and program)
+# Firefox 57 Campaign - heavily under construction (website and program)
 
 This project is based on https://mozilla.github.io/global-sprint/.
 
