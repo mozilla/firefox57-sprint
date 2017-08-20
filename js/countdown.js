@@ -13,7 +13,7 @@
     var distance = END_DATE - today;
     if (distance < 0) {
         clearInterval(interval);
-        countdownElement.textContent = 'EXPIRED!';
+        document.querySelector('.hero-unit').removeNode(countdownElement);
         return;
     }
 
