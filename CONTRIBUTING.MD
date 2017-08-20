@@ -1,18 +1,14 @@
 # Contributing to the fx-webcompat-campaign website
 
-Thank you for your interest in contributing to this website :tada:!
+Thank you for your interest regarding contributing to this website :tada:!
 
-This documents is a set of guidelines for contributing to this website on GitHub. These are guidelines, not rules. This guide is meant to make it easy for you to get involved.
+These documents are a set of guidelines for contributing to this website on GitHub. These are guidelines, not rules. This guide is meant to make it easier for you to get involved.
 
 * [Participation guidelines](#participation-guidelines)
-
----
 
 ## Participation guidelines
 
 This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to zannah@mozillafoundation.org.
-
----
 
 ## How to submit changes
 
@@ -24,8 +20,6 @@ Once you've identified one of the issues above that you feel you can contribute 
 
 First time contributing to open source? Check out this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
----
-
 ## Run locally
 
 You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/) to run this site locally.
@@ -34,16 +28,10 @@ You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-
 2. `bundle exec jekyll serve`
 3. Open [http://localhost:4000/fx-webcompat-campaign/](http://localhost:4000/fx-webcompat-campaign/) in your favourite browser!
 
----
-
 ## Maintainers
 
 This repository is currently maintained by [@MichaelKohler](http://github.com/MichaelKohler).
 
----
-
 ## How to report bugs
 
 Notice a mistake? Please file any bugs, requests, or questions in [our issue tracker](https://github.com/mozilla/fx-webcompat-campaign/issues)
-
----
