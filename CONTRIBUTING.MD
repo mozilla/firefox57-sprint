@@ -1,8 +1,8 @@
 # Contributing to the fx-webcompat-campaign website
 
-Thank you for your interest in contributing to this website :tada:!
+Thank you for your interest regarding contributing to this website :tada:!
 
-This documents is a set of guidelines for contributing to this website on GitHub. These are guidelines, not rules. This guide is meant to make it easy for you to get involved.
+These documents are a set of guidelines for contributing to this website on GitHub. These are guidelines, not rules. This guide is meant to make it easier for you to get involved.
 
 * [Participation guidelines](#participation-guidelines)
 
