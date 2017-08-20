@@ -1,6 +1,6 @@
 # Firefox 57 Campaign - heavily under construction (website and program)
 
-This project is actually based on https://mozilla.github.io/global-sprint/.
+This project is based on https://mozilla.github.io/global-sprint/.
 
 ## Getting Started
 
