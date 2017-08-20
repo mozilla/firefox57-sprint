@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Resources
-following:  _articles/resources/subpage.md
+following:  _articles/resources/reporting.md
 contents:
-  - _articles/resources/subpage.md
+  - _articles/resources/reporting.md
 ---
 
 Some resources...
