@@ -11,6 +11,10 @@ h1 {
   flex-direction: column;
 }
 
+#leaderboard thead {
+  background-color: #C2E8F9;
+}
+
 .home-card h1 {
   font-family: 'Zilla Slab Highlight', sans-serif;
   font-size: 1.9rem;
