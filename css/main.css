@@ -45,8 +45,9 @@ h1 {
   line-height: 4.4rem;
 }
 
+.hero-unit #countdown,
 .hero-unit h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 1em;
   color: white;
   font-weight: bold;
