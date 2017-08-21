@@ -25,3 +25,5 @@ Thanks for your interest regarding contributing to the website! There are many w
 This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the following email: community-development@mozilla.com.
 
 ----
+
+<img src="http://cdn.ttgtmedia.com/ITKE/cwblogs/open-source-insider/Mozilla%20PL.png" width="150"></img>
