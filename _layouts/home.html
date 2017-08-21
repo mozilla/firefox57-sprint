@@ -13,10 +13,7 @@ layout: default
     </p>
   </div>
 
-  <!-- Add this css File in head tag-->
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-
-          <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+    <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -32,7 +29,7 @@ layout: default
                   <div class="item active">
 
                       <!-- Slide Background -->
-                      <img src="../img/homepage_slide_1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <img src="{{ site.baseurl }}/img/homepage_slide_1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                       <div class="bs-slider-overlay"></div>
 
                       <div class="container">
@@ -52,7 +49,7 @@ layout: default
                   <div class="item">
 
                       <!-- Slide Background -->
-                      <img src="../img/homepage_slide_2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <img src="{{ site.baseurl }}/img/homepage_slide_2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                       <div class="bs-slider-overlay"></div>
                       <!-- Slide Text Layer -->
                       <div class="slide-text slide_style_center">
@@ -68,7 +65,7 @@ layout: default
                   <div class="item">
 
                       <!-- Slide Background -->
-                      <img src="../img/homepage_slide_3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <img src="{{ site.baseurl }}/img/homepage_slide_3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                       <div class="bs-slider-overlay"></div>
                       <!-- Slide Text Layer -->
                       <div class="slide-text slide_style_right">
@@ -101,5 +98,6 @@ layout: default
   </div>
 
   <script src="{{ site.baseurl }}/js/countdown.js"></script>
+  <script src="{{ site.baseurl }}/js/bsTouchSlider.js"></script>
 
 </div>
