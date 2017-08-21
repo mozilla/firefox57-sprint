@@ -26,4 +26,5 @@ This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participatin
 
 ----
 
-<img src="http://cdn.ttgtmedia.com/ITKE/cwblogs/open-source-insider/Mozilla%20PL.png" width="150"></img>
+<img src="https://www.mozilla.org/media/img/pebbles/moz-wordmark-dark-reverse.2cbc28bb9895.svg" width="150"></img>
+<img src="https://orig15.deviantart.net/5b95/f/2016/070/3/b/mit_license_logo_by_excaliburzero-d9ur2lg.png" width="75"></img>
