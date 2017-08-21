@@ -14,12 +14,88 @@ layout: default
     </p>
   </div>
 
-  <div class="flex row-xs-center ">
-    <div class="btn-group-lg">
-      <a class="btn btn-lg btn-default btn-next btn-xs-full" href="{{ '/host/' | prepend: site.baseurl }}">Become a host&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
-      <a class="btn btn-lg btn-default btn-next btn-xs-full" href="{{ '/participant/' | prepend: site.baseurl }}">Attend an event&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
-    </div>
-  </div>
+  <!-- Add this css File in head tag-->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+          <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                  <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper For Slides -->
+              <div class="carousel-inner" role="listbox">
+
+                  <!-- Third Slide -->
+                  <div class="item active">
+
+                      <!-- Slide Background -->
+                      <img src="../img/homepage_slide_1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+
+                      <div class="container">
+                          <div class="row">
+                              <!-- Slide Text Layer -->
+                              <div class="slide-text slide_style_left">
+                                <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
+                                <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
+                                <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
+                                <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+                  <!-- Second Slide -->
+                  <div class="item">
+
+                      <!-- Slide Background -->
+                      <img src="../img/homepage_slide_2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+                      <!-- Slide Text Layer -->
+                      <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
+                        <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
+                        <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
+                        <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
+                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+                  <!-- Third Slide -->
+                  <div class="item">
+
+                      <!-- Slide Background -->
+                      <img src="../img/homepage_slide_3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                      <div class="bs-slider-overlay"></div>
+                      <!-- Slide Text Layer -->
+                      <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
+                        <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
+                        <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
+                        <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
+                  </div>
+                  <!-- End of Slide -->
+
+
+              </div><!-- End of Wrapper For Slides -->
+
+              <!-- Left Control -->
+              <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                  <span class="fa fa-angle-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+
+              <!-- Right Control -->
+              <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                  <span class="fa fa-angle-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+
+          </div> <!-- End  bootstrap-touch-slider Slider -->
 
   <div class="map">
     <iframe width="100%" height="520" frameborder="0" src="https://www.google.com/maps/d/u/0/embed?mid=1AaL9Hv0VroENQOEjIY2aYPhCKic&zoom=14" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
