@@ -25,3 +25,6 @@ Thanks for your interest regarding contributing to the website! There are many w
 This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the following email: community-development@mozilla.com.
 
 ----
+
+<img src="https://www.mozilla.org/media/img/pebbles/moz-wordmark-dark-reverse.2cbc28bb9895.svg" width="150"></img>
+<img src="https://orig15.deviantart.net/5b95/f/2016/070/3/b/mit_license_logo_by_excaliburzero-d9ur2lg.png" width="75"></img>
