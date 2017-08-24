@@ -3,7 +3,7 @@
 const ReportingForm = {
   handleReportingIssueChoice: function(element) {
     // Show additional form elements if the answer is "yes"
-    if (element.value === 'yes') {
+    if (element.value === 'Yes') {
       document.querySelector('#additionalWebcompatInfo').classList.remove('hidden');
     } else {
       document.querySelector('#additionalWebcompatInfo').classList.add('hidden');
