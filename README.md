@@ -6,7 +6,7 @@ This project is based on https://mozilla.github.io/global-sprint/.
 
 ## Getting Started
 
-You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/) to run this site locally.
+To run this site locally you need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/).
 
 1. `bundle install`
 2. `bundle exec jekyll serve`
