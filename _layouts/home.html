@@ -13,6 +13,13 @@ layout: default
     </p>
   </div>
 
+
+
+
+  Counter for how many websites one has checked.
+
+
+
     <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
               <!-- Indicators -->
@@ -36,27 +43,10 @@ layout: default
                           <div class="row">
                               <!-- Slide Text Layer -->
                               <div class="slide-text slide_style_left">
-                                <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
-                                <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
+                                <h1 data-animation="animated zoomInRight">  Join this month’s campaign and help Firefox to perform better in your region.</h1>
                                 <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
                                 <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
                           </div>
-                      </div>
-                  </div>
-                  <!-- End of Slide -->
-
-                  <!-- Second Slide -->
-                  <div class="item">
-
-                      <!-- Slide Background -->
-                      <img src="{{ site.baseurl }}/img/homepage_slide_2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
-                      <div class="bs-slider-overlay"></div>
-                      <!-- Slide Text Layer -->
-                      <div class="slide-text slide_style_center">
-                        <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
-                        <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
-                        <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
-                        <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
                       </div>
                   </div>
                   <!-- End of Slide -->
@@ -69,8 +59,7 @@ layout: default
                       <div class="bs-slider-overlay"></div>
                       <!-- Slide Text Layer -->
                       <div class="slide-text slide_style_right">
-                        <h1 data-animation="animated zoomInRight">Looking forward to meet you in our conference!!!</h1>
-                        <p data-animation="animated fadeInLeft">The best is yet to come!!!</p>
+                        <h1 data-animation="animated zoomInRight">  Let’s fix the web, one webcompat bug at a time</h1>
                         <a href="{{ '/host/' | prepend: site.baseurl }}" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Become an host</a>
                         <a href="{{ '/participant/' | prepend: site.baseurl }}" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">Attend an event</a>                      </div>
                   </div>
@@ -101,5 +90,12 @@ layout: default
   <script src="{{ site.baseurl }}/js/bsTouchSlider.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
   <script src="{{ site.baseurl }}/js/sites-tested.js"></script>
+
+  <script src="bootstrap-touch-slider.js"></script>
+
+  <script type="text/javascript">
+      $('#bootstrap-touch-slider').bsTouchSlider();
+  </script>
+
 
 </div>
