@@ -6,12 +6,13 @@ This project respects Mozilla's [community participation guidelines](https://www
 
 ## How to treat each other
 
-* Be respectful and welcoming
-* Understand different perspectives
-* Do not threaten or make use of violence
-* Empower other people in the community
-* Strive for excellence professionally and humanly wise 
-* Don’t expect to agree with every decision
+
+  * Be respectful and welcoming
+  * Try to Understand different perspectives
+  * Do not threaten violence
+  * Empower others
+  * Strive for excellence
+  * Don’t expect to agree with every decision
 
 ---
 
