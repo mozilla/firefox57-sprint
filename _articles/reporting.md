@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Reporting Form"
+title: "Reporting"
 ---
 
 ### Report your testing progress
