@@ -10,7 +10,7 @@ These documents are a set of guidelines for contributing to this website on GitH
 
 ## Participation guidelines
 
-This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to zannah@mozillafoundation.org.
+This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to community-development@mozilla.com.
 
 ----
 

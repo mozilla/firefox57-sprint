@@ -18,3 +18,7 @@ The Mozilla Project welcomes and encourages participation by everyone. It doesnâ
 We welcome contributions from everyone as long as they interact constructively with our community, including, but not limited to people of varied age, culture, ethnicity, gender, gender-identity, language, race, sexual orientation, geographical location and religious views.
 
 Mozilla-based activities should be inclusive and should support such diversity.
+
+## Reporting
+
+Please report unacceptable behavior to community-development@mozilla.com.
