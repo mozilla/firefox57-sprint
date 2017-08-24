@@ -15,4 +15,9 @@ Thanks for your interest in attending an event!
 
 ### Do the action solo
 
-You can also do the action solo... [Needs more info]
+You prefer to participate at the campaign from the comfort of your couch? That’s totally fine! Here is how:
+
+* Install [Nightly](https://nightly.mozilla.org) for Desktop
+* Check the [Alexa list](https://www.alexa.com/topsites/countries) of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
+* Once you have finished testing a website go and [report it on the report form]({{ '/reporting/' | prepend: site.baseurl }}), you will find all the info you need on how to report your work
+* Keep doing the awesome work and make Firefox better!
