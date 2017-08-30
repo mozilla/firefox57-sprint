@@ -1,4 +1,4 @@
-# Contributing to the fx-webcompat-campaign website
+# Contributing to the firefox57-sprint website
 
 Thank you for your interest regarding contributing to this website :tada:!
 
@@ -32,7 +32,7 @@ You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-
 
 1. `bundle install`
 2. `bundle exec jekyll serve`
-3. Open [http://localhost:4000/fx-webcompat-campaign/](http://localhost:4000/fx-webcompat-campaign/) in your favourite browser!
+3. Open [http://localhost:4000/firefox57-sprint/](http://localhost:4000/firefox57-sprint/) in your favourite browser!
 
 ----
 
@@ -44,4 +44,4 @@ This repository is currently maintained by [@MichaelKohler](http://github.com/Mi
 
 ## How to report bugs
 
-Notice a mistake? Please file any bugs, requests, or questions in [our issue tracker](https://github.com/mozilla/fx-webcompat-campaign/issues)
+Notice a mistake? Please file any bugs, requests, or questions in [our issue tracker](https://github.com/mozilla/firefox57-sprint/issues)

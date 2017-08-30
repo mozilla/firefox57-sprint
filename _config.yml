@@ -1,11 +1,11 @@
-title: Firefox Campaign
+title: Firefox 57 Sprint
 subtitle:
 email: community-development@mozilla.com
 twitter: https://twitter.com/mozilla
-baseurl: "/fx-webcompat-campaign" # the subpath of your site, e.g. /blog
+baseurl: "/firefox57-sprint" # the subpath of your site, e.g. /blog
 url: "https://mozilla.github.io" # the base hostname & protocol for your site
 github:
-  repo: "mozilla/fx-webcompat-campaign"
+  repo: "mozilla/firefox57-sprint"
   branch: "master"
 
 

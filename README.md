@@ -1,4 +1,4 @@
-# Firefox 57 Campaign - heavily under construction (website and program)
+# Firefox 57 Sprint - heavily under construction (website and program)
 
 This project is based on https://mozilla.github.io/global-sprint/.
 
@@ -10,7 +10,7 @@ To run this site locally you need to install [Jekyll](https://jekyllrb.com/), [R
 
 1. `bundle install`
 2. `bundle exec jekyll serve`
-3. Open [http://localhost:4000/fx-webcompat-campaign/](http://localhost:4000/fx-webcompat-campaign/) in your favourite browser!
+3. Open [http://localhost:4000/firefox57-sprint/](http://localhost:4000/firefox57-sprint/) in your favourite browser!
 
 ----
 
