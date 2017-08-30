@@ -1,12 +1,15 @@
 (function() {
   'use strict';
 
-  var END_DATE = new Date('2017-10-01');
+  var END_DATE = new Date('2017-10-02');
   var ONE_SECOND = 1000;
   var ONE_MINUTE = ONE_SECOND * 60;
   var ONE_HOUR = ONE_MINUTE * 60;
   var ONE_DAY = ONE_HOUR * 24;
   var countdownElement = document.querySelector('#countdown');
+
+  // Do not use UTC, but local timezone
+  END_DATE = END_DATE.setMinutes(END_DATE.getMinutes() + END_DATE.getTimezoneOffset());
 
   function count() {
     var today = new Date();
