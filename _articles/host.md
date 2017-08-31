@@ -30,7 +30,7 @@ Do you need funding and swag? You can request your event package [here - missing
 
 **Funding for your event:**
 
-For this event you can request up to 100 USD. Here is a list of items you can ask for:
+For this event you can request up to 30 USD. Here is a list of items you can ask for:
 
 * Refreshments and snacks for the participants
 * Internet (in case your connection is not good enough)
