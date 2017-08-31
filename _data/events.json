@@ -1,7 +1,7 @@
 {
   "France": [
     {
-      "locationName": "Mozilla Offices Paris",
+      "locationName": "Testdata: Mozilla Offices Paris",
       "locationCity": "Paris",
       "locationCountry": "France",
       "locationCountryCode": "FR",
@@ -12,7 +12,7 @@
 
   "Germany": [
     {
-      "locationName": "Mozilla Offices Berlin",
+      "locationName": "Testdata: Mozilla Offices Berlin",
       "locationCity": "Berlin",
       "locationCountry": "Germany",
       "locationCountryCode": "DE",
@@ -20,7 +20,7 @@
       "signupLink": "https://www.mozilla.org"
     },
     {
-      "locationName": "Some place in Munich",
+      "locationName": "Testdata: Some place in Munich",
       "locationCity": "Munich",
       "locationCountry": "Germany",
       "locationCountryCode": "DE",
@@ -31,7 +31,7 @@
 
   "United Kingdom": [
     {
-      "locationName": "Mozilla Offices London",
+      "locationName": "Testdata: Mozilla Offices London",
       "locationCity": "London",
       "locationCountry": "United Kingdom",
       "locationCountryCode": "UK",
