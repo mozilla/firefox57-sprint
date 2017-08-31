@@ -12,13 +12,13 @@ h1 {
 }
 
 #leaderboard thead {
-  background-color: #C2E8F9;
+  background-color: #6FB8D8;
 }
 
 .highlight {
   padding: 0.3em 0;
   font-family: 'Zilla Slab', sans-serif;
-  background-color: #88d1f1;
+  background-color: #6FB8D8;
   font-weight:700;
   line-height: 1.9;
   color:#000;
@@ -117,7 +117,7 @@ h5 {
 }
 
 a, a:link {
-  color: #88D1F1;
+  color: #6FB8D8;
 }
 
 a:hover {
@@ -249,7 +249,7 @@ html.no-js .sidebar .collapsible-content {
 
 .sidebar-header span {
   font-family: 'Zilla Slab Highlight', sans-serif;
-  color: #88d1f1;
+  color: #6FB8D8;
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -298,7 +298,7 @@ html.no-js .sidebar .collapsible-content {
 
 .sidebar-menu > li > a:hover,
 .sidebar-menu > li > a:focus {
-  background-color: #85d1f3;
+  background-color: #c2e8f9;
   color:black;
   transition: background-color 3ms;
 }
@@ -500,7 +500,7 @@ td, th {
 }
 
 a.btn {
-  border: 2px solid #3bb7ef;
+  border: 2px solid #6FB8D8;
   color: #000;
   transition: background 0.2s ease-in-out;
   white-space:normal;
@@ -514,8 +514,8 @@ a.btn {
 
 a.btn:hover {
   opacity: 1;
-  background: #85d1f3;
-  border-color: #85d1f3;
+  background: #c2e8f9;
+  border-color: #c2e8f9;
   color: #000;
 }
 
