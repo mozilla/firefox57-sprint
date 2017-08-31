@@ -38,13 +38,13 @@ h1 {
 }
 
 .hero-unit h1 {
-  color: black;
-  background-color: white;
-  display: inline-block;
-  font-family: 'Zilla Slab Highlight', sans-serif;
-  font-weight: bold;
+  color: white;
+  background-color: black;
+  display: inline;
+  font-family: 'Zilla Slab', sans-serif;
+  font-weight: 900;
   font-size: 4rem;
-  line-height: 4.4rem;
+  line-height: 7rem;
 }
 
 .hero-unit #countdown {
@@ -524,7 +524,11 @@ a.btn:hover {
     width: 100%;
   }
 }
-
+@media (max-width: 658px) {
+  .hero-unit h1 {
+    line-height: 4.8rem;
+  }
+}
 /* PASSING */
 
 @-webkit-keyframes passing {
