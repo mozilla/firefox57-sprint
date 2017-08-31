@@ -32,7 +32,7 @@ You'll need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-
 
 1. `bundle install`
 2. `bundle exec jekyll serve`
-3. Open [http://localhost:4000/firefox57-sprint/](http://localhost:4000/firefox57-sprint/) in your favourite browser!
+3. Open [http://localhost:4000/](http://localhost:4000/) in your favourite browser!
 
 ----
 
