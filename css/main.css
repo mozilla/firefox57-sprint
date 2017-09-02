@@ -524,7 +524,7 @@ a.btn:hover {
     width: 100%;
   }
 }
-@media (max-width: 658px) {
+@media (max-width: 675px) {
   .hero-unit h1 {
     color: white;
     background-color: black;
