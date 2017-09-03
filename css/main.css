@@ -524,7 +524,18 @@ a.btn:hover {
     width: 100%;
   }
 }
-
+@media (max-width: 675px) {
+  .hero-unit h1 {
+    color: white;
+    background-color: black;
+    display: inline;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+}
+	
 /* PASSING */
 
 @-webkit-keyframes passing {
