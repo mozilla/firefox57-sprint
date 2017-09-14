@@ -21,20 +21,55 @@
   }
 
   function addEventList(events) {
+    var groupedByCountry = groupByCountry(events);
     const container = document.querySelector('.map-sites');
 
-    /**{% for country in site.data.events %}
-    <div class="col-lg-3 col-sm-4 col-xs-6">
-    <i class="mg mg-5x map-{{ country[1][0].locationCountryCode | downcase }}"></i>
-    <hr >
-    <h4>{{ country[0] }}</h4>
-    {% for event in country[1] %}
-      {% if event.signupLink %}
-        <div><a target="_blank" href="{{ event.signupLink }}">{{ event.locationName }}, {{ event.locationCity }}</a></div>
-      {% endif %}
-    {% endfor %}
-    </div>
-  {% endfor %}*/
+    for (var country in groupedByCountry) {
+      var countryContainer = document.createElement('div');
+      countryContainer.classList.add('col-lg-3', 'col-sm-4', 'col-xs-6');
+
+      var countryCode = 'de'; // FIXME: needs to be dynamic
+      var icon = document.createElement('i');
+      icon.classList.add('mg', 'mg-5x');
+      icon.classList.add('map-' + countryCode);
+      countryContainer.appendChild(icon);
+
+      var divider = document.createElement('hr');
+      countryContainer.appendChild(divider);
+
+      var countryName = document.createElement('h4');
+      countryName.textContent = country;
+      countryContainer.appendChild(countryName);
+
+      for (var event of groupedByCountry[country]) {
+        console.log(event);
+        var eventLinkContainer = document.createElement('div');
+
+        var eventLink = document.createElement('a');
+        eventLink.target = '_blank';
+        eventLink.href = event.RegistrationLink;
+        eventLink.textContent = event.City;
+
+        eventLinkContainer.appendChild(eventLink);
+        countryContainer.appendChild(eventLinkContainer);
+      }
+
+      container.appendChild(countryContainer);
+    }
+  }
+
+  function groupByCountry(events) {
+    return events.reduce(function (countries, event) {
+      var country = event.Country;
+
+      if (countries[country]) {
+        countries[country].push(event);
+      } else {
+        countries[country] = [event];
+      }
+
+      return countries;
+    }, {});
   }
 
   window.addEventListener('DOMContentLoaded', initTabletop);
