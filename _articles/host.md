@@ -22,15 +22,20 @@ So you decided to host an event, congratulations! Your efforts will help Firefox
 
 ### Resources you can request
 
-Do you need funding and swag? You can request your event package [here - missing link!!](). You will receive:
+**Swag for your event:**
+
+You can [request swag](https://goo.gl/forms/4FEhEEPkujEt3TYd2) for your event. This needs to be done enough time before the event to allow shipping it to your location.
+
+Swag will include the following:
 
 * 100 new Firefox stickers
 * 1 poster
-* 3 Firefox tshirts
 
 **Funding for your event:**
 
-For this event you can request up to 30 USD. Here is a list of items you can ask for:
+For this event you can request up to 30 USD. Please note that you can only apply for the budget after the event happend. To do so, fill out the [request budget](https://goo.gl/forms/fkwubidAAnvK40vF3) form and provide the link to your receipts. Budget requests without a link to receipts will not be considered.
+
+Here is a list of items you can ask for:
 
 * Refreshments and snacks for the participants
 * Internet (in case your connection is not good enough)
