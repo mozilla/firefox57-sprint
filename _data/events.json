@@ -1,42 +1,186 @@
-{
-  "France": [
+  {
+"Bangladesh": [
     {
-      "locationName": "Testdata: Mozilla Offices Paris",
-      "locationCity": "Paris",
-      "locationCountry": "France",
-      "locationCountryCode": "FR",
-      "organizer": "Somebody",
-      "signupLink": "https://www.mozilla.org"
+      "locationName": "Firefox57 Sprint at HEXit",
+      "locationCity": "Sylhet",
+      "locationCountry": "Bangladesh",
+      "locationCountryCode": "BD",
+      "organizer": "Syed Omar Faruk Towaha",
+      "signupLink": "https://www.eventbrite.co.uk/e/firefox57-sprint-at-hexit-tickets-37918883401"
     }
   ],
-
-  "Germany": [
+"Brazil": [
     {
-      "locationName": "Testdata: Mozilla Offices Berlin",
-      "locationCity": "Berlin",
-      "locationCountry": "Germany",
-      "locationCountryCode": "DE",
-      "organizer": "Somebody",
-      "signupLink": "https://www.mozilla.org"
+      "locationName": "Firefox 57 Sprint - FATEC Taquaritinga",
+      "locationCity": "Taquaritinga",
+      "locationCountry": "Brazil",
+      "locationCountryCode": "BR",
+      "organizer": "Felipe Do Espirito Santo",
+      "signupLink": "https://www.sympla.com.br/firefox-57-sprint---fatec-taquaritinga__187582"
+    }
+  ],
+"Bolivia": [
+    {
+      "locationName": "Firefox 57 Sprint - Santa Cruz de la Sierra",
+      "locationCity": "Santa Cruz de la Sierra",
+      "locationCountry": "Bolivia",
+      "locationCountryCode": "BO",
+      "organizer": "Victor Hugo Acosta Ortega",
+      "signupLink": "http://tinyurl.com/y8mggslw"
+    }
+  ],
+"Czech Republic": [
+    {
+      "locationName": "linuxdays",
+      "locationCity": "Prague",
+      "locationCountry": "Czech Republic",
+      "locationCountryCode": "CZ",
+      "organizer": "Michal Stanke",
+      "signupLink": "https://www.linuxdays.cz/2017/"
+    }
+  ],
+"Colombia": [
+    {
+      "locationName": "Firefox 57 Sprint, Bogota",
+      "locationCity": "Bogotá",
+      "locationCountry": "Colombia",
+      "locationCountryCode": "CO",
+      "organizer": "Mónica Paola Bonilla Parra",
+      "signupLink": "https://goo.gl/forms/R5oscGfvh5PRmuu13"
+    }
+  ],
+  "Hong Kong": [
+    {
+      "locationName": "Firefox 57 Sprint HK",
+      "locationCity": "Hong Kong",
+      "locationCountry": "Hong Kong",
+      "locationCountryCode": "HK",
+      "organizer": "Sammy Fung",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-hk/"
+    }
+  ],
+"India": [
+    {
+      "locationName": "Join us Together for Firefox 57 Sprint",
+      "locationCity": "Hanamkonda",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Sandeep Kapalawai",
+      "signupLink": "https://www.eventbrite.com/e/join-us-together-for-firefox-57-sprint-tickets-7828674777"
     },
+   {
+      "locationName": "Firefox 57 Sprint - Hyderabad",
+      "locationCity": "Hyderabad",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Ranjith Raj Vasam",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-hyderabad/"
+      },
     {
-      "locationName": "Testdata: Some place in Munich",
-      "locationCity": "Munich",
-      "locationCountry": "Germany",
-      "locationCountryCode": "DE",
-      "organizer": "Somebody",
-      "signupLink": "https://www.mozilla.org"
+      "locationName": "Firefox 57 Sprint - Hyderabad",
+      "locationCity": "Hyderabad",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Ranjith Raj Vasam",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-hyderabad/"
+       },
+    {
+      "locationName": "Firefox 57 Sprint by Mozilla Noida Community",
+      "locationCity": "Greater Noida",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Vibhanshu Chaudhary",
+      "signupLink": "http://bit.ly/2vUarKc"
+       },
+    {
+      "locationName": "Firefox 57 Sprint Ranchi",
+      "locationCity": "Ranchi , Jharkhand",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Md Shahbaz Alam",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-ranchi/"
+       },
+    {
+      "locationName": "Mozilla Sprint 57 New Delhi",
+      "locationCity": "New Delhi",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Shivam Singhal",
+      "signupLink": "https://www.facebook.com/events/351727151950019/"
+       },
+  {
+      "locationName": "Firefox 57 Sprint ",
+      "locationCity": "Ahmedabad",
+      "locationCountry": "India",
+      "locationCountryCode": "IN",
+      "organizer": "Viral Parmar",
+      "signupLink": "https://www.facebook.com/events/141559383120331"
+       },
+  ],
+"Mauritius": [
+    {
+      "locationName": "Firefox 57 Sprint, Long Mountain",
+      "locationCity": "Long Mountain",
+      "locationCountry": "Mauritius",
+      "locationCountryCode": "MU",
+      "organizer": "Sandraghassen Subbaraya Pillai",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-campaign-1/"
     }
   ],
-
-  "United Kingdom": [
+"Mexico": [
     {
-      "locationName": "Testdata: Mozilla Offices London",
-      "locationCity": "London",
-      "locationCountry": "United Kingdom",
-      "locationCountryCode": "UK",
-      "organizer": "Somebody",
-      "signupLink": "https://www.mozilla.org"
+      "locationName": "Firefox 57 Sprint, Mozilla Mexico Club",
+      "locationCity": "Ciudad de México",
+      "locationCountry": "Mexico",
+      "locationCountryCode": "MX",
+      "organizer": "Exal Alejandro Gómez Vázquez",
+      "signupLink": "http://meetu.ps/3cSy1s"
     }
+  ],
+"Nigeria": [
+    {
+      "locationName": "Firefox 57 Sprint Ibaban",
+      "locationCity": "Ibadan",
+      "locationCountry": "Nigeria",
+      "locationCountryCode": "NG",
+      "organizer": "Omotayo Fagbohun",
+      "signupLink": "https://docs.google.com/forms/d/e/1FAIpQLSfnB7fSQnQIIy29EsB08P45GBYJoWhPW_xoEMv4guVJitmoXg/viewform"
+    },
+   {
+      "locationName": "Firefox 57 Sprint Campaign Lagos",
+      "locationCity": "Lagos",
+      "locationCountry": "Nigeria",
+      "locationCountryCode": "NG",
+      "organizer": "Oyeley Odumuyiwa",
+      "signupLink": "https://reps.mozilla.org/e/firefox-57-sprint-campaign/"
+    }
+  ],
+"Sri Lanka": [
+    {
+      "locationName": "Firefox 57 Sprint Sri Lanka",
+      "locationCity": "Colombo",
+      "locationCountry": "Sri Lanka",
+      "locationCountryCode": "LK",
+      "organizer": "Ruwan Ranganath",
+      "signupLink": "https://www.eventbrite.com/e/firefox-57-sprint-sri-lanka-tickets-37869728377"
+    }
+  ],
+"Uganda": [
+    {
+      "locationName": "Firefox 57 Sprint - Entebbe",
+      "locationCity": "ENTEBBE",
+      "locationCountry": "Uganda",
+      "locationCountryCode": "UG",
+      "organizer": "Senteza Charles",
+      "signupLink": "https://www.eventbrite.com/e/firefox-57-sprint-tickets-37784662944"
+    },
+  {
+      "locationName": "Firefox 57 Sprint - kampala",
+      "locationCity": "kampala",
+      "locationCountry": "Uganda",
+      "locationCountryCode": "UG",
+      "organizer": "Lebron Brian Ssekalegga",
+      "signupLink": "https://www.eventbrite.com/e/firefox-57-sprint-campaign-uganda-tickets-8209018395"
+    },
   ]
 }
