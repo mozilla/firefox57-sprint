@@ -15,6 +15,7 @@ title: REGISTER
 </div>
 
 <div class="row map-sites">
+</div>
 {% for country in site.data.events %}
   <div class="col-lg-3 col-sm-4 col-xs-6">
   <i class="mg mg-5x map-{{ country[1][0].locationCountryCode | downcase }}"></i>
@@ -30,3 +31,4 @@ title: REGISTER
 </div>
 
 <script src="{{ site.baseurl }}/js/map.js"></script>
+<script src="{{ site.baseurl }}/js/mapData.js"></script>

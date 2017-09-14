@@ -108,14 +108,6 @@ h5 {
   font-weight: 400;
 }
 
-.details + h3 {
-  margin-top: 1.5rem;
-}
-
-.details ul {
-  padding-left: 1.5rem;
-}
-
 a, a:link {
   color: #6FB8D8;
 }
@@ -127,10 +119,6 @@ a:hover {
 
 a:hover edit:before {
   text-decoration: none;
-}
-
-.details {
-  margin-bottom: 2rem;
 }
 
 .suggest-changes {
@@ -535,7 +523,7 @@ a.btn:hover {
     line-height: 4.8rem;
   }
 }
-	
+
 /* PASSING */
 
 @-webkit-keyframes passing {
@@ -667,9 +655,6 @@ a.btn:hover {
   .lesson-content {
     padding: 2rem 3.5rem;
   }
-  .hero-unit h1 {
-/*    font-size: 4.5rem;*/
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -762,6 +747,16 @@ footer.col-sm-12 {
 #content .project-card img {
   vertical-align: middle;
   border-style: none;
+}
+
+.intro iframe {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro iframe {
+    width: 100%;
+  }
 }
 
 .map-sites>div {
