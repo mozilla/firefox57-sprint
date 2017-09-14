@@ -21,10 +21,16 @@ let map;
   }
 
   function drawMap(events) {
-    map = new GooleMapsMap(API_URL, events, getCountryCode);
+    const hasContainer = !!document.querySelector('.map-sites');
+    map = new GooleMapsMap(API_URL, events, getCountryCode, hasContainer);
   }
 
   function addEventList(events) {
+    const container = document.querySelector('.map-sites');
+    if (!container) {
+      return;
+    }
+
     var groupedByCountry = groupByCountry(events);
     groupedByCountry.sort(function(a, b) {
       if (a.name < b.name) {
@@ -38,17 +44,19 @@ let map;
       return 0;
     });
 
-    const container = document.querySelector('.map-sites');
     const loading = document.querySelector('.loading');
-    loading.parentNode.removeChild(loading);
+
+    if (loading) {
+      loading.parentNode.removeChild(loading);
+    }
 
     for (var country of groupedByCountry) {
       var countryContainer = document.createElement('div');
       var countryCode = getCountryCode(country.name);
-      
+
       countryContainer.classList.add('col-country', 'col-lg-3', 'col-sm-4', 'col-xs-6');
       countryContainer.id = countryCode;
-      
+
       var icon = document.createElement('i');
       icon.classList.add('mg', 'mg-5x');
       icon.classList.add('map-' + countryCode);
@@ -355,4 +363,4 @@ let map;
 
 function mapCallback() {
   map.initMap();
-}  
+}
