@@ -10,11 +10,13 @@ title: REGISTER
 <h3>Find events near you!</h3>
 <p>The events currently listed are all test data, we are working on changing this. Until then, you can still register your own event!</p>
 
-<div class="row map-canvas">
+<div class="map-canvas">
   <!--  map -->
 </div>
 
-<div class="row map-sites">
+<div class="container">
+  <div class="row map-sites">
+  </div>
 </div>
 
 <script src="{{ site.baseurl }}/js/map.js"></script>
