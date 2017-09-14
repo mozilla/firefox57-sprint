@@ -759,6 +759,12 @@ footer.col-sm-12 {
   }
 }
 
+.loading p {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
 .map-sites>div {
   text-align:center;
   padding: 2em 0 2em;
@@ -771,6 +777,20 @@ footer.col-sm-12 {
   height: 3px;
 }
 
-.map-sites div h4 {
-  padding-left:15px;
+.col-country {
+  margin-top: 20px;
+}
+
+.map-canvas {
+  height: 30rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .map-canvas {
+    height: 20rem;
+  }
+}
+
+:target {
+  border: 5px solid #6FB8D8;
 }
