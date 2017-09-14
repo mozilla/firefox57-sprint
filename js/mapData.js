@@ -1,5 +1,9 @@
+let map;
+
 (function() {
   'use strict';
+  const API_KEY = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ';
+  const API_URL = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=mapCallback`;
 
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA/edit?usp=sharing';
 
@@ -17,7 +21,7 @@
   }
 
   function drawMap(events) {
-    console.log('look, your events are here', events);
+    map = new GooleMapsMap(API_URL, events);
   }
 
   function addEventList(events) {
@@ -39,3 +43,7 @@
 
   window.addEventListener('DOMContentLoaded', initTabletop);
 })();
+
+function mapCallback() {
+  map.initMap();
+}  
