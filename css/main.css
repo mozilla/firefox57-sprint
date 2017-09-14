@@ -655,9 +655,6 @@ a.btn:hover {
   .lesson-content {
     padding: 2rem 3.5rem;
   }
-  .hero-unit h1 {
-/*    font-size: 4.5rem;*/
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -750,6 +747,16 @@ footer.col-sm-12 {
 #content .project-card img {
   vertical-align: middle;
   border-style: none;
+}
+
+.intro iframe {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro iframe {
+    width: 100%;
+  }
 }
 
 .map-sites>div {
