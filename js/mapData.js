@@ -21,7 +21,7 @@ let map;
   }
 
   function drawMap(events) {
-    map = new GooleMapsMap(API_URL, events);
+    map = new GooleMapsMap(API_URL, events, getCountryCode);
   }
 
   function addEventList(events) {
@@ -30,12 +30,13 @@ let map;
 
     for (var country in groupedByCountry) {
       var countryContainer = document.createElement('div');
-      countryContainer.classList.add('col-lg-3', 'col-sm-4', 'col-xs-6');
-
       var countryCode = getCountryCode(country);
       var icon = document.createElement('i');
+      
+      countryContainer.classList.add('col-country', 'col-lg-3', 'col-sm-4', 'col-xs-6');
+      countryContainer.id = countryCode;
       icon.classList.add('mg', 'mg-5x');
-      icon.classList.add('map-' + countryCode.toLowerCase());
+      icon.classList.add('map-' + countryCode);
       countryContainer.appendChild(icon);
 
       var divider = document.createElement('hr');
@@ -324,7 +325,7 @@ let map;
       'Zimbabwe': 'ZW'
     };
 
-    return isoCountries[countryName] || '';
+    return isoCountries[countryName].toLowerCase() || '';
   }
 
   window.addEventListener('DOMContentLoaded', initTabletop);

@@ -771,11 +771,20 @@ footer.col-sm-12 {
   height: 3px;
 }
 
-.map {
+.col-country {
+  margin-top: 20px;
+}
+
+.map-canvas {
   height: 30rem;
 }
+
 @media only screen and (max-width: 768px) {
-  .map {
+  .map-canvas {
     height: 20rem;
   }
+}
+
+:target {
+  border: 5px solid #6FB8D8;
 }

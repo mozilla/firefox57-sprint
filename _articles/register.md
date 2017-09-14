@@ -10,7 +10,7 @@ title: REGISTER
 <h3>Find events near you!</h3>
 <p>The events currently listed are all test data, we are working on changing this. Until then, you can still register your own event!</p>
 
-<div class="map">
+<div class="row map-canvas">
   <!--  map -->
 </div>
 

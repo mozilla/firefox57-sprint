@@ -1,11 +1,12 @@
 class GooleMapsMap {
-  constructor(apiUrl, events) {
+  constructor(apiUrl, events, getCountryCode) {
     this.loadJS(apiUrl);
     this.events = events;
     this.GEOCODE_API = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
     // spread sheet keys
     this.CITY_KEY = 'City';
     this.COUNTRY_KEY = 'Country';
+    this.getCountryCode = getCountryCode;
   }
   
   loadJS(file) {
@@ -19,7 +20,7 @@ class GooleMapsMap {
     const defaultPosition = {lat: 18.4856271, lng:0};
     Object.assign(position, defaultPosition); 
     
-    const googleMapsMap = new google.maps.Map(document.querySelector('.map'), {
+    const googleMapsMap = new google.maps.Map(document.querySelector('.map-canvas'), {
       zoom,
       center: new google.maps.LatLng(position.lat, position.lng),
       mapTypeId: 'roadmap',
@@ -33,10 +34,12 @@ class GooleMapsMap {
         const marker = new google.maps.Marker({
           position: position,
           country: event[this.COUNTRY_KEY],
+          icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8'
         });
         marker.setMap(googleMapsMap);
         google.maps.event.addListener(marker, 'click', () => {
-          console.log(marker);
+          const coutryId = this.getCountryCode(marker.country)
+          window.location.hash = coutryId;
         });
       });
     });
