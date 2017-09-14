@@ -12,6 +12,12 @@ title: REGISTER
 
 <iframe width="100%" height="520" frameborder="0" src="https://www.google.com/maps/d/u/0/embed?mid=1AaL9Hv0VroENQOEjIY2aYPhCKic&zoom=14" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
+<div class="container loading">
+  <div class="row">
+    <p>Loading events...</p>
+  </div>
+</div>
+
 <div class="row map-sites">
 </div>
 
