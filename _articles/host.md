@@ -22,7 +22,7 @@ So you decided to host an event, congratulations! Your efforts will help Firefox
 
 ### Resources you can request
 
-Do you need funding and swag? You can request your event package [here - missing link!!](). You will receive:
+Do you need funding and swag? You can request your event package [here - missing link!!!](). You will receive:
 
 * 100 new Firefox stickers
 * 1 poster
