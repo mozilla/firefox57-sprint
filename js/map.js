@@ -23,7 +23,6 @@ class GooleMapsMap {
       zoom,
       center: new google.maps.LatLng(position.lat, position.lng),
       mapTypeId: 'roadmap',
-      styles: this.getStyles()
     });
 
     this.events.forEach((event) => {
@@ -31,10 +30,13 @@ class GooleMapsMap {
         return response.json();
       }).then((result) => {
         const position = result.results[0].geometry.location;
-        console.log(this.getStyles());
-        let marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
           position: position,
-          map: googleMapsMap
+          country: event[this.COUNTRY_KEY],
+        });
+        marker.setMap(googleMapsMap);
+        google.maps.event.addListener(marker, 'click', () => {
+          console.log(marker);
         });
       });
     });
@@ -117,7 +119,7 @@ class GooleMapsMap {
           "elementType": "all",
           "stylers": [
               {
-                  "color": "#6FB8D8"
+                  "color": "#46bcec"
               },
               {
                   "visibility": "on"
