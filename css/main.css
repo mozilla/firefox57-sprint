@@ -779,3 +779,12 @@ footer.col-sm-12 {
 .map-sites div h4 {
   padding-left:15px;
 }
+
+.map {
+  height: 30rem;
+}
+@media only screen and (max-width: 768px) {
+  .map {
+    height: 20rem;
+  }
+}

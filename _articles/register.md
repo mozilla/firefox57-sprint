@@ -10,7 +10,9 @@ title: REGISTER
 <h3>Find events near you!</h3>
 <p>The events currently listed are all test data, we are working on changing this. Until then, you can still register your own event!</p>
 
-<iframe width="100%" height="520" frameborder="0" src="https://www.google.com/maps/d/u/0/embed?mid=1AaL9Hv0VroENQOEjIY2aYPhCKic&zoom=14" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<div class="map">
+  <!--  map -->
+</div>
 
 <div class="row map-sites">
 {% for country in site.data.events %}
@@ -26,3 +28,5 @@ title: REGISTER
   </div>
 {% endfor %}
 </div>
+
+<script src="{{ site.baseurl }}/js/map.js"></script>
