@@ -1,4 +1,4 @@
-# Contributing to the firefox57-sprint website
+# Contributing to the Firefox Quantum Sprint website
 
 Thank you for your interest regarding contributing to this website :tada:!
 

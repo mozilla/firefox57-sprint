@@ -1,4 +1,4 @@
-# Firefox 57 Sprint - heavily under construction (website and program)
+# Firefox Quantum Sprint - heavily under construction (website and program)
 
 This project is based on https://mozilla.github.io/global-sprint/.
 
