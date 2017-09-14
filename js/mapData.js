@@ -22,13 +22,25 @@
 
   function addEventList(events) {
     var groupedByCountry = groupByCountry(events);
+    groupedByCountry.sort(function(a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+
+      if (a.name > b.name) {
+        return 1;
+      }
+
+      return 0;
+    });
+
     const container = document.querySelector('.map-sites');
 
-    for (var country in groupedByCountry) {
+    for (var country of groupedByCountry) {
       var countryContainer = document.createElement('div');
       countryContainer.classList.add('col-lg-3', 'col-sm-4', 'col-xs-6');
 
-      var countryCode = getCountryCode(country);
+      var countryCode = getCountryCode(country.name);
       var icon = document.createElement('i');
       icon.classList.add('mg', 'mg-5x');
       icon.classList.add('map-' + countryCode.toLowerCase());
@@ -38,10 +50,10 @@
       countryContainer.appendChild(divider);
 
       var countryName = document.createElement('h4');
-      countryName.textContent = country;
+      countryName.textContent = country.name;
       countryContainer.appendChild(countryName);
 
-      for (var event of groupedByCountry[country]) {
+      for (var event of country.events) {
         var eventLinkContainer = document.createElement('div');
 
         var eventLink = document.createElement('a');
@@ -59,16 +71,23 @@
 
   function groupByCountry(events) {
     return events.reduce(function (countries, event) {
-      var country = event.Country;
+      var country = countries.find(function(country) {
+        return country.name === event.Country;
+      });
 
-      if (countries[country]) {
-        countries[country].push(event);
+      if (country) {
+        country.events.push(event);
       } else {
-        countries[country] = [event];
+        country = {
+          name: event.Country,
+          events: [event]
+        };
+
+        countries.push(country);
       }
 
       return countries;
-    }, {});
+    }, []);
   }
 
   function getCountryCode(countryName) {
