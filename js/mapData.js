@@ -39,6 +39,8 @@ let map;
     });
 
     const container = document.querySelector('.map-sites');
+    const loading = document.querySelector('.loading');
+    loading.parentNode.removeChild(loading);
 
     for (var country of groupedByCountry) {
       var countryContainer = document.createElement('div');

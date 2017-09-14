@@ -759,6 +759,12 @@ footer.col-sm-12 {
   }
 }
 
+.loading p {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
 .map-sites>div {
   text-align:center;
   padding: 2em 0 2em;

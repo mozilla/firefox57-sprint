@@ -14,9 +14,13 @@ title: REGISTER
   <!--  map -->
 </div>
 
-<div class="container">
-  <div class="row map-sites">
+<div class="container loading">
+  <div class="row">
+    <p>Loading events...</p>
   </div>
+</div>
+
+<div class="row map-sites">
 </div>
 
 <script src="{{ site.baseurl }}/js/map.js"></script>
