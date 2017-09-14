@@ -26,3 +26,5 @@ title: REGISTER
   </div>
 {% endfor %}
 </div>
+
+<script src="{{ site.baseurl }}/js/mapData.js"></script>
