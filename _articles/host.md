@@ -41,4 +41,4 @@ Here is a list of items you can ask for:
 * Internet (in case your connection is not good enough)
 * Cake with Firefox logo
 
-**Note:** You can request funding for your event as long as you have more than 10 people registered to attend
+**Note:** You can request funding for your event as long as more than 10 people attended
