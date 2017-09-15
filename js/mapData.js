@@ -69,6 +69,18 @@ let map;
       countryName.textContent = country.name;
       countryContainer.appendChild(countryName);
 
+      country.events.sort(function(a, b) {
+        if (a.City < b.City) {
+          return -1;
+        }
+
+        if (a.City > b.City) {
+          return 1;
+        }
+
+        return 0;
+      });
+
       for (var event of country.events) {
         var eventLinkContainer = document.createElement('div');
 
