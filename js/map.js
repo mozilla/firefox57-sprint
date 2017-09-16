@@ -32,6 +32,10 @@ class GooleMapsMap {
       this.getPosition(event[this.COUNTRY_KEY], event[this.CITY_KEY]).then((response) => {
         return response.json();
       }).then((result) => {
+        if (result.results.length === 0) {
+          return;
+        }
+
         const position = result.results[0].geometry.location;
         const marker = new google.maps.Marker({
           position: position,
