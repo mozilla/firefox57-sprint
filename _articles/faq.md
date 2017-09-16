@@ -6,6 +6,9 @@ title: Frequently Asked Questions
 ### What is this campaign?
 With the introduction of Stylo on Nightly we know that websites might break. The Firefox team is not able to test all of those websites, especially the local ones. For that reason we need your help to test as many local websites as possible.
 
+### When is the campaign? 
+From 2nd to 8th October 2017. 
+
 ### How can I participate?
 You can either <a href="{{ '/host/' | prepend: site.baseurl }}">host</a> an event or <a href="{{ '/participant/' | prepend: site.baseurl }}">participate</a> in an event organized in your region.
 
