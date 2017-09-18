@@ -15,7 +15,10 @@
 
   function processInfo(data, tabletop) {
     var groupedByNickname = groupByNickname(data);
-    console.log(groupedByNickname);
+
+    document.querySelector('#loading').classList.add('hidden');
+    document.querySelector('#no-results').classList.remove('hidden');
+
     Object.keys(groupedByNickname).forEach(function(name) {
       var row = document.createElement('tr');
 
@@ -27,14 +30,12 @@
       totalCell.textContent = groupedByNickname[name];
       row.appendChild(totalCell);
 
-      document.querySelector('#loading').classList.add('hidden');
       leaderboardTableBody.appendChild(row);
       document.querySelector('#leaderboard').classList.remove('hidden');
     });
   }
 
   function groupByNickname(entries) {
-    console.log(entries);
     var result = {};
 
     entries.map(function(entry) {
