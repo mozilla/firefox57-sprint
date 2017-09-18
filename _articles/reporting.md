@@ -39,7 +39,7 @@ Thanks for helping test websites with Firefox 57! Please share your result with 
 
 <div class="afterSubmitInfo hidden">
   <h2>Thanks for submitting your report!</h2>
-  <a href="/reporting">Add a new report</a>
+  <a href="{{ site.baseurl }}/reporting">Add a new report</a>
 </div>
 
 <!-- used as target after form submission so we don't go away from our site -->
