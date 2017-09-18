@@ -119,6 +119,8 @@ let map;
   }
 
   function getCountryCode(countryName) {
+    var countryCode = 'wrld'; // if we don't have the country in our list, we use the world icon directly
+
     var isoCountries = {
       'Afghanistan': 'AF',
       'Aland Islands': 'AX',
@@ -361,13 +363,18 @@ let map;
       'Virgin Islands, British': 'VG',
       'Virgin Islands, U.S.': 'VI',
       'Wallis And Futuna': 'WF',
+      'West Bank': 'wrld-me', // as there is no ISO code for it, we use the glyphmap ME
       'Western Sahara': 'EH',
       'Yemen': 'YE',
       'Zambia': 'ZM',
       'Zimbabwe': 'ZW'
     };
 
-    return isoCountries[countryName].toLowerCase() || '';
+    if (countryName in isoCountries) {
+      countryCode = isoCountries[countryName].toLowerCase();
+    }
+
+    return countryCode;
   }
 
   window.addEventListener('DOMContentLoaded', initTabletop);
