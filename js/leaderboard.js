@@ -17,7 +17,10 @@
     var groupedByNickname = groupByNickname(data);
 
     document.querySelector('#loading').classList.add('hidden');
-    document.querySelector('#no-results').classList.remove('hidden');
+
+    if (Object.keys(groupedByNickname).length === 0) {
+      document.querySelector('#no-results').classList.remove('hidden');
+    }
 
     Object.keys(groupedByNickname).forEach(function(name) {
       var row = document.createElement('tr');
