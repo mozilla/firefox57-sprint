@@ -352,7 +352,7 @@ let map;
       'Uganda': 'UG',
       'Ukraine': 'UA',
       'United Arab Emirates': 'AE',
-      'United Kingdom': 'GB',
+      'United Kingdom': 'UK',
       'United States': 'US',
       'United States Outlying Islands': 'UM',
       'Uruguay': 'UY',
