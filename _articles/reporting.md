@@ -39,7 +39,7 @@ Thanks for helping test websites with Firefox Quantum! Please share your result 
 
 <div class="afterSubmitInfo hidden">
   <h2>Thanks for submitting your report!</h2>
-  <a href="{{ site.baseurl }}/reporting">Add a new report</a>
+  <a href="{{ site.baseurl }}/reporting/">Add a new report</a>
 </div>
 
 <!-- used as target after form submission so we don't go away from our site -->
