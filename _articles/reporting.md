@@ -5,7 +5,7 @@ title: "Reporting"
 
 ### Report your testing progress
 
-Thanks for helping test websites with Firefox 57! Please share your result with us. The data entered below will be stored in a Google Sheet.
+Thanks for helping test websites with Firefox Quantum! Please share your result with us. The data entered below will be stored in a Google Sheet.
 
 <form id="reporting-form" action="" method="POST" target="no-target">
   <div class="form-group">
