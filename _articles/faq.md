@@ -13,7 +13,7 @@ From 2nd to 8th October 2017.
 You can either <a href="{{ '/host/' | prepend: site.baseurl }}">host</a> an event or <a href="{{ '/participant/' | prepend: site.baseurl }}">participate</a> in an event organized in your region.
 
 ### Can I do the activity solo?
-Absolutely! In case an event is not close to you, or you prefer the comfort of your coach, you can still participate by following the workflow.
+Absolutely! In case an event is not close to you, or you prefer the comfort of your couch, you can still participate by following the workflow.
 
 ### Can I run an event outside the campaign dates?
 Yes, you can. However, we are aiming for those dates to ensure that you participate in the bigger party.
