@@ -1,35 +1,94 @@
 ---
 layout: default
 ---
-<div class="hero-unit home-page">
-  <h1>Firefox Quantum Sprint</h1>
-  <h2 class="sprint-date">2nd - 8th October 2017</h2>
-  <h2 id="countdown">&nbsp;</h2>
-  <h2 class="sites-tested hidden">&nbsp;</h2>
-</div>
-<div class="home-page">
-  <div class="intro">
-    <h3>Firefox strikes back!</h3>
-    <p>Firefox Quantum is soon to be launched and this is our opportunity to make Firefox rise again. Participate in the Firefox Quantum Sprint and make a difference by ensuring that Firefox runs smoothly in your region.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CjoIO0s1lYQ?showinfo=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="flex row-xs-center action-buttons">
-    <div class="btn-group-lg">
-      <a class="btn btn-lg btn-default btn-next btn-xs-full" href="{{ '/host/' | prepend: site.baseurl }}">Become a host&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
-      <a class="btn btn-lg btn-default btn-next btn-xs-full" href="{{ '/participant/' | prepend: site.baseurl }}">Attend an event&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
+<div class="home">
+  <header>
+    <div class="top-header">
+      {% include logo.html %}
+      {% include navigation.html %}
     </div>
-  </div>
 
-  <div class="map-canvas">
-    <!--  map -->
-  </div>
+    <div class="intro">
+      <h3>2-8 October 2017</h3>
+    <h1>Help us make a successful Firefox Quantum launch!</h1>
+    <h3 id="countdown"></h3>
+    <h3 class="sites-tested"></h3>
+    </div>
+  </header>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-  <script src="{{ site.baseurl }}/js/countdown.js"></script>
-  <script src="{{ site.baseurl }}/js/sites-tested.js"></script>
-  <script src="{{ site.baseurl }}/js/map.js"></script>
-  <script src="{{ site.baseurl }}/js/mapData.js"></script>
+  <section class="description-container">
+    <div class="description">
+      <h2>Firefox strikes back!</h2>
+      <p>Firefox Quantum is soon to be launched and this is our opportunity to make Firefox rise again. Participate in the Firefox Quantum Sprint and make a difference by ensuring that Firefox runs smoothly in your region.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CjoIO0s1lYQ?showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
 
+  <section id="actions" class="action-buttons">
+    <a class="box" href="{{ '/host/' | prepend: site.baseurl }}">
+      <h3>you could either</h3>
+      <h2>host an event</h2>
+      <img src="/img/host.png" alt="" />
+      <p>learn more</p>
+    </a>
+    <a class="box" href="{{ '/participant/' | prepend: site.baseurl }}">
+      <h3>or you could</h3>
+      <h2>attend an event</h2>
+      <img src="/img/attend.png" alt="" />
+      <p>learn more</p>
+    </a>
+  </section>
 
+  <section class="events">
+    <h2>Planned events</h2>
+    <div class="map">
+      <div class="event-details">
+        <h5>Date</h5>
+        <p>Foo..</p>
+
+        <h5>City</h5>
+        <p>Foo..</p>
+
+        <h5>Country</h5>
+        <p>Foo..</p>
+
+        <h5>Hosted by</h5>
+        <p>Foo..</p>
+
+        <a class="button register-button" href="">Book your seat</a>
+      </div>
+      <div class="map-canvas">
+        <!--  map -->
+      </div>
+    </div>
+  </section>
+
+  <section class="info-buttons">
+    <div class="report">
+      <a href="{{ '/reporting/' | prepend: site.baseurl }}"><img src="/img/icon-upload.svg" alt="" /></a>
+      <p>Upload your progress</p>
+      <a class="title" href="{{ '/reporting/' | prepend: site.baseurl }}">Report</a>
+    </div>
+    <div class="leaderboard">
+      <a href="{{ '/leaderboard/' | prepend: site.baseurl }}"><img src="/img/icon-leaderboard.svg" alt="" /></a>
+      <p>See the ranking on the</p>
+      <a class="title" href="{{ '/leaderboard/' | prepend: site.baseurl }}">Leaderboard</a>
+    </div>
+    <div class="github">
+      <a href="https://github.com/{{ site.github.repo }}"><img src="/img/icon-github.svg" alt="" /></a>
+      <p>View our code on</p>
+      <a class="title" href="https://github.com/{{ site.github.repo }}">GitHub</a>
+    </div>
+  </section>
+
+  <section class="interested">
+    <p>Still interested?</p>
+    <a class="button involve-button" href="#actions">Get involved!</a>
+  </section>
 </div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script src="{{ site.baseurl }}/js/countdown.js"></script>
+<script src="{{ site.baseurl }}/js/sites-tested.js"></script>
+<script src="{{ site.baseurl }}/js/map.js"></script>
+<script src="{{ site.baseurl }}/js/mapData.js"></script>

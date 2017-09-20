@@ -12,7 +12,7 @@
       <link href="{{ site.baseurl }}/css/mofo-bootstrap.css" rel="stylesheet">
       <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab|Zilla+Slab+Highlight:400,700">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans|Zilla+Slab|Zilla+Slab+Highlight:400,700">
 
       <!-- Google Tag Manager -->
       <script src="{{ site.baseurl }}/js/dnt-helper.js"></script>
@@ -36,21 +36,7 @@
     </head>
 
     <body>
-
-      <div class="page container-fluid">
-        <div class="row">
-          {% assign post_count = site.posts|size %}
-          <div id="navigation" class="col-md-2 col-sm-3 col-xs-12 sidebar" role="navigation">
-            {% include navigation.html %}
-          </div>
-          <div id="content" class="col-md-10 col-sm-9 col-xs-12">
-            {{ content }}
-          </div>
-        </div>
-
-        <div class="row">
-        {% include footer.html %}
-        </div>
-      </div>
+      {{ content }}
+      {% include footer.html %}
     </body>
 </html>
