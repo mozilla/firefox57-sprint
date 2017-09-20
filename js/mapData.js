@@ -302,6 +302,7 @@ let map;
       'Qatar': 'QA',
       'Reunion': 'RE',
       'Romania': 'RO',
+      'Russia': 'RU',
       'Russian Federation': 'RU',
       'Rwanda': 'RW',
       'Saint Barthelemy': 'BL',
