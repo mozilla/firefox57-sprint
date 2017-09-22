@@ -35,6 +35,8 @@ Swag will include the following:
 
 For this event you can request up to 30 USD. Please note that you can only apply for the budget after the event happend. To do so, fill out the [request budget](https://goo.gl/forms/fkwubidAAnvK40vF3) form and provide the link to your receipts. Budget requests without a link to receipts will not be considered.
 
+Note: We know that in some cases 30 USD might not be enough. So in cases you've spent more do send us the receipts. We will evaluate them and reimburse you if the expenses are logical in your local.
+
 Here is a list of items you can ask for:
 
 * Refreshments and snacks for the participants
