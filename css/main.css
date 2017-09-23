@@ -135,7 +135,7 @@ a:hover {
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.register-button {
+.front-register-button {
   background-color: #88d1f1;
   color: #558194;
   padding: 20px 0px 0px 20px;
@@ -523,5 +523,25 @@ footer .footer-content a {
 }
 
 .map-sites :target {
-  border: 5px solid #6FB8D8;
+  border: 5px solid #59b5b0;
+}
+
+#leaderboard {
+  border-collapse: collapse;
+}
+
+#leaderboard thead {
+  background-color: #1C1A42;
+  color: #fff;
+  text-align: left;
+}
+
+#leaderboard th:first-child,
+#leaderboard td:first-child {
+  width: 200px;
+}
+
+#leaderboard td,
+#leaderboard th {
+  padding: 10px 10px;
 }
