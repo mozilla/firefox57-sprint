@@ -1,5 +1,22 @@
 body {
   margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: inline-block;
+  font-family: 'Zilla Slab Highlight';
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 32px;
+  background-color: white;
+  color: black;
+}
+
+.logo-white {
+  background-color: black;
+  color: white;
 }
 
 .top-header {
@@ -37,17 +54,11 @@ body {
   letter-spacing: 0.2px;
   color: #5ec8de;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 
-.top-header .logo {
-  display: inline-block;
-  font-family: 'Zilla Slab Highlight';
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 32px;
-  background-color: white;
-  color: black;
+.top-header nav ul li a:hover {
+  box-shadow: inset 0 -4px 0 #5ec8de;
 }
 
 .top-header .logo-subtext {
@@ -306,4 +317,71 @@ body {
   font-weight: 500;
   letter-spacing: -0.6px;
   color: #ffffff;
+}
+
+footer {
+  background:
+    url('/img/img-planet-closeup.svg') bottom right no-repeat,
+    linear-gradient(to top, #535382, #2d2c55);
+  padding-top: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+footer .info {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-globe {
+  flex: 1;
+}
+
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+footer .icons .icon {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+footer .icons .icon .footer-icon {
+  width: 24px;
+  padding-right: 10px;
+}
+
+footer .icons a {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  color: #87d3e7;
+  text-decoration: none;
+}
+
+footer .footer-content {
+  font-family: 'Fira Sans';
+  font-size: 10px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  width: 30%;
+}
+
+footer .footer-content p {
+  opacity: 0.5;
+}
+
+footer .footer-content a {
+  text-decoration: none;
+  color: inherit;
 }
