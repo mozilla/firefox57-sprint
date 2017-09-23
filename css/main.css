@@ -497,3 +497,31 @@ footer .footer-content a {
   background-color: #7474b5;
   padding-bottom: 50px;
 }
+
+.map-sites {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+
+.map-sites > div {
+  min-width: 200px;
+  text-align: center;
+  padding: 2em 0 2em;
+}
+
+.map-sites div hr {
+  width:35%;
+  border-top:2px solid #59b5b0;;
+  border-bottom: 2px solid #59b5b0;;
+  height: 3px;
+}
+
+.col-country {
+  margin-top: 20px;
+}
+
+.map-sites :target {
+  border: 5px solid #6FB8D8;
+}
