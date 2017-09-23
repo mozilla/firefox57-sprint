@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="host">
+  <header>
+    <div class="top-header">
+      {% include logo.html %}
+      {% include navigation.html %}
+    </div>
+
+    <h1>Attend an event in your area</h1>
+    <h2>to help us test Firefox</h2>
+  </header>
+
+  <section class="content">
+    <a class="button register-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdcae57eJpqnFEPHwe4HjIzuvpe1RoRzsibH3vY4gmSikFxaA/viewform" target="_blank">Register your event</a>
+
+    {{content}}
+  </section>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script src="{{ site.baseurl }}/js/map.js"></script>
+<script src="{{ site.baseurl }}/js/mapData.js"></script>

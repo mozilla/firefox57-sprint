@@ -3,6 +3,19 @@ body {
   padding: 0;
 }
 
+a {
+  color: #59b5b0;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: inset 0 -4px 0 #59b5b0;
+}
+
+.hidden {
+  display: none;
+}
+
 .logo {
   display: inline-block;
   font-family: 'Zilla Slab Highlight';
@@ -29,8 +42,11 @@ body {
   width: 113px;
 }
 
-.top-header a {
+.top-header a,
+.top-header a:hover {
   flex: 1;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .top-header nav {
@@ -68,6 +84,158 @@ body {
   letter-spacing: 0;
   background-color: black;
   color: white;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.event-details {
+  flex: 1;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.event-details h5 {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #33525d;
+  margin: 30px 0 0 0;
+}
+
+.event-details h5:first-child {
+  margin: 20px 0 0 0;
+}
+
+.event-details p {
+  flex: 1;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: #558194;
+  margin: 7px 0 0 0;
+}
+
+.button {
+  margin-top: 30px;
+  font-family: 'Fira Sans';
+  display: block;
+  width: 160px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.register-button {
+  background-color: #88d1f1;
+  color: #558194;
+  padding: 20px 0px 0px 20px;
+}
+
+.involve-button {
+  background-color: #7474b5;
+  color: #fff;
+  padding: 10px 0px 0px 40px;
+  margin-top: 0;
+  height: 30px;
+}
+
+.register-button {
+  background-color: #59b5b0;
+  color: #fff;
+  padding: 10px 0px 0px 20px;
+  margin-top: 0;
+  height: 30px;
+  width: 200px;
+}
+
+.attend-button {
+  background-color: #7474b5;
+  color: #fff;
+  padding: 10px 0px 0px 28px;
+  margin-top: 0;
+  height: 30px;
+  width: 200px;
+}
+
+.map-canvas {
+  height: 30rem;
+}
+
+footer {
+  background:
+    url('/img/img-planet-closeup.svg') bottom right no-repeat,
+    linear-gradient(to top, #535382, #2d2c55);
+  padding-top: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+footer .info {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-globe {
+  flex: 1;
+}
+
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+footer .icons .icon {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+footer .icons .icon .footer-icon {
+  width: 24px;
+  padding-right: 10px;
+}
+
+footer .icons a {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  color: #87d3e7;
+  text-decoration: none;
+}
+
+footer .footer-content {
+  font-family: 'Fira Sans';
+  font-size: 10px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  width: 30%;
+}
+
+footer .footer-content p {
+  opacity: 0.5;
+}
+
+footer .footer-content a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .home header {
@@ -199,71 +367,6 @@ body {
   font-family: 'Fira Sans';
 }
 
-.event-details {
-  flex: 1;
-  text-align: left;
-  padding-left: 60px;
-}
-
-.event-details h5 {
-  flex: 1;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  text-transform: uppercase;
-  color: #33525d;
-  margin: 30px 0 0 0;
-}
-
-.event-details h5:first-child {
-  margin: 20px 0 0 0;
-}
-
-.event-details p {
-  flex: 1;
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: -0.5px;
-  color: #558194;
-  margin: 7px 0 0 0;
-}
-
-.button {
-  margin-top: 30px;
-  font-family: 'Fira Sans';
-  display: block;
-  width: 160px;
-  height: 40px;
-  border-radius: 2px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.register-button {
-  background-color: #88d1f1;
-  color: #558194;
-  padding: 20px 0px 0px 20px;
-}
-
-.involve-button {
-  background-color: #7474b5;
-  color: #fff;
-  padding: 10px 0px 0px 40px;
-  margin-top: 0;
-  height: 30px;
-}
-
-.button:hover {
-  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
-}
-
-.map-canvas {
-  height: 30rem;
-}
-
 .home .events .map .map-canvas {
   flex: 2;
 }
@@ -319,69 +422,78 @@ body {
   color: #ffffff;
 }
 
-footer {
-  background:
-    url('/img/img-planet-closeup.svg') bottom right no-repeat,
-    linear-gradient(to top, #535382, #2d2c55);
-  padding-top: 30px;
-  padding-left: 30px;
-  display: flex;
-  flex-direction: row;
-  height: 300px;
+.host header {
+  background-color: #59b5b0;
+  padding-bottom: 50px;
 }
 
-footer .info {
-  display: flex;
-  flex-direction: column;
+.simple header {
+  background-image: radial-gradient(circle at 51% 100%, #535382, #1a1840);
+  padding-bottom: 50px;
 }
 
-footer .footer-globe {
-  flex: 1;
-}
-
-footer .icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 50%;
-  margin-bottom: 100px;
-}
-
-footer .icons .icon {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 10px;
-  flex: 1;
-  min-width: 200px;
-}
-
-footer .icons .icon .footer-icon {
-  width: 24px;
-  padding-right: 10px;
-}
-
-footer .icons a {
+.host header h1,
+.host header h2,
+.participate header h1,
+.participate header h2 {
+  padding-left: 50px;
   font-family: 'Fira Sans';
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.3px;
-  color: #87d3e7;
-  text-decoration: none;
+  color: #fff;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: 0.4px;
+  width: 35%;
 }
 
-footer .footer-content {
-  font-family: 'Fira Sans';
-  font-size: 10px;
-  letter-spacing: -0.2px;
+.host header h1,
+.participate header h1 {
+  margin-bottom: 10px;
+}
+
+.host header h2,
+.participate header h2 {
+  margin-top: 10px;
+  font-family: 'Zilla Slab';
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 0.79;
+  letter-spacing: 0.7px;
+  color: #ffe079;
+}
+
+.host .top-header nav ul li a,
+.participate .top-header nav ul li a,
+.simple .top-header nav ul li a {
   color: #ffffff;
-  width: 30%;
 }
 
-footer .footer-content p {
-  opacity: 0.5;
+.host .top-header nav ul li a:hover,
+.participate .top-header nav ul li a:hover {
+  box-shadow: inset 0 -4px 0 #ffffff;
 }
 
-footer .footer-content a {
-  text-decoration: none;
-  color: inherit;
+.simple .top-header nav ul li a:hover {
+  box-shadow: inset 0 -4px 0 #c3e8f8;
+}
+
+.host .content,
+.participate .content,
+.simple .content {
+  font-family: 'Fira Sans';
+  padding: 50px 50px 50px 50px;
+}
+
+.host h3,
+.participate h3 {
+  opacity: 0.8;
+  font-family: 'Zilla Slab';
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2.2px;
+  color: #33525d;
+}
+
+.participate header {
+  background-color: #7474b5;
+  padding-bottom: 50px;
 }

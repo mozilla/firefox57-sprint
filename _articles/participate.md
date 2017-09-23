@@ -1,11 +1,7 @@
 ---
-layout: page
+layout: participate
 title: Attend an Event
 ---
-
-Thanks for your interest in attending an event!
-
-<a class="btn btn-lg btn-default btn-next btn-xs-full" href="{{ '/register/' | prepend: site.baseurl }}">Find a local event in your area&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
 
 ### Steps on how to sign up for a local event
 

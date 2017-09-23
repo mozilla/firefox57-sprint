@@ -1,11 +1,7 @@
 ---
-layout: page
+layout: host
 title: Become a Host
 ---
-
-Thanks for your interest in hosting an event!
-
-<a class="btn btn-lg btn-default btn-next btn-xs-full" href="https://docs.google.com/forms/d/e/1FAIpQLSdcae57eJpqnFEPHwe4HjIzuvpe1RoRzsibH3vY4gmSikFxaA/viewform" target="_blank">Register your own event &nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i></a>
 
 ### How to host an event
 

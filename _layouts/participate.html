@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="participate">
+  <header>
+    <div class="top-header">
+      {% include logo.html %}
+      {% include navigation.html %}
+    </div>
+
+    <h1>Attend and help us</h1>
+    <h2>We'll show you around!</h2>
+  </header>
+
+  <section class="content">
+    <p>Thanks for your interest in attending an event! Read below to learn more.</p>
+
+    <a class="button attend-button" href="{{ '/register/' | prepend: site.baseurl }}">Find a local event</a>
+
+    {{content}}
+  </section>
+</div>
