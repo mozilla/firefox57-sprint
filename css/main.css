@@ -250,6 +250,27 @@ footer .footer-content a {
   color: inherit;
 }
 
+.home .spaceship {
+  width: 250px;
+  position: relative;
+  top: -230px;
+  left: 30px;
+}
+
+.home .spaceship-path {
+  width: 100px;
+  position: relative;
+  top: 15px;
+  left: -200px;
+}
+
+.home .flag {
+  width: 200px;
+  position: relative;
+  top: 175px;
+  left: 53%;
+}
+
 .home header {
   background-image: url('/img/img-header.svg');
   background-size: cover;
@@ -294,8 +315,9 @@ footer .footer-content a {
 }
 
 .home .description {
-  width: 50%;
   margin: 0 auto;
+  margin-top: -200px;
+  width: 50%;
   display: block;
   text-align: center;
 }
