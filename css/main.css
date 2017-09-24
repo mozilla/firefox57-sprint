@@ -88,6 +88,18 @@ a:hover {
   line-height: 32px;
 }
 
+.host .top-header .logo-subtext {
+  background-color: #59B5B0;
+}
+
+.participate .top-header .logo-subtext {
+  background-color: #7474B5;
+}
+
+.simple .top-header .logo-subtext {
+  background-color: #1C1A42;
+}
+
 .event-details {
   flex: 1;
   text-align: left;
