@@ -46,6 +46,7 @@ class GooleMapsMap {
           country: event[this.COUNTRY_KEY],
           city: event[this.CITY_KEY],
           host: event[this.HOST_KEY],
+          link: event[this.REGISTRATION_KEY],
           icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8'
         });
         marker.setMap(googleMapsMap);
@@ -64,6 +65,7 @@ class GooleMapsMap {
             document.querySelector('#event-city').textContent = marker.city;
             document.querySelector('#event-country').textContent = marker.country;
             document.querySelector('#event-host').textContent = marker.host;
+            document.querySelector('#event-link').href = marker.link;
           });
         }
       });
