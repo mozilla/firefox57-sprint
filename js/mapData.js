@@ -21,8 +21,12 @@ let map;
   }
 
   function drawMap(events) {
-    const hasContainer = !!document.querySelector('.map-sites');
-    map = new GooleMapsMap(API_URL, events, getCountryCode, hasContainer);
+    const hasContainerEventList = !!document.querySelector('.map-sites');
+    const hasContainerEventDetail = !!document.querySelector('.event-details');
+    map = new GooleMapsMap(API_URL, events, getCountryCode, {
+      hasContainerEventList: hasContainerEventList,
+      hasContainerEventDetail: hasContainerEventDetail
+    });
   }
 
   function addEventList(events) {

@@ -43,19 +43,22 @@ layout: default
     <h2>Planned events</h2>
     <div class="map">
       <div class="event-details">
-        <h5>Date</h5>
-        <p>Foo..</p>
+        <p class="event-details-no-selected">Please select an event on the map</p>
+        <div class="event-detail hidden">
+          <h5>Date</h5>
+          <p id="event-date">No event selected</p>
 
-        <h5>City</h5>
-        <p>Foo..</p>
+          <h5>City</h5>
+          <p id="event-city">No event selected</p>
 
-        <h5>Country</h5>
-        <p>Foo..</p>
+          <h5>Country</h5>
+          <p id="event-country">No event selected</p>
 
-        <h5>Hosted by</h5>
-        <p>Foo..</p>
+          <h5>Hosted by</h5>
+          <p id="event-host">No event selected</p>
 
-        <a class="button front-register-button" href="">Book your seat</a>
+          <a class="button front-register-button" href="">Book your seat</a>
+        </div>
       </div>
       <div class="map-canvas">
         <!--  map -->
