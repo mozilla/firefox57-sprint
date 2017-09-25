@@ -531,10 +531,7 @@ footer .footer-content a {
 .participate .content,
 .simple .content {
   font-family: 'Fira Sans';
-  padding: 50px 50px 50px 50px
-}
-
-.simple .content {
+  padding: 50px 50px 50px 50px;
   background-color: #f2f2f2;
 }
 
@@ -612,6 +609,7 @@ footer .footer-content a {
   padding: 20px 40px 20px 40px;
   max-width: 60%;
   color: #49758a;
+  margin-top: 20px;
 }
 
 .content-box h3 {

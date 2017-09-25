@@ -3,6 +3,8 @@ layout: participate
 title: Attend an Event
 ---
 
+<div class="content-box" markdown="1">
+
 ### Steps on how to sign up for a local event
 
 * Go to the <a href="{{ '/register/' | prepend: site.baseurl }}">Registration</a> page and look for an event in your area
@@ -17,3 +19,5 @@ You prefer to participate at the campaign from the comfort of your couch? Thatâ€
 * Check the [Alexa list](https://www.alexa.com/topsites/countries) of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
 * Once you have finished testing a website go and [report it on the report form]({{ '/reporting/' | prepend: site.baseurl }}), you will find all the info you need on how to report your work
 * Keep doing the awesome work and make Firefox better!
+
+</div>
