@@ -16,7 +16,7 @@ title: "Reporting"
     <div class="form-group">
       <label for="nicknameInput">Nickname</label>
       <input type="text" class="form-control" id="nicknameInput" placeholder="Enter your nickname">
-      <small id="nickname" class="form-text text-muted">This nickname will show up in several places and is public.</small>
+      <p id="nickname" class="form-text text-muted">This nickname will show up in several places and is public.</p>
     </div>
     <div class="form-group">
       <label for="urlInput">Which website did you test?</label>
@@ -39,7 +39,7 @@ title: "Reporting"
       <label for="issueWebcompatInput">Please head over to <a href="https://webcompat.com/">webcompat.com</a> and file an issue with your testing result and then enter the submitted report link here.</label>
       <input type="url" class="form-control" id="issueWebcompatInput" placeholder="https://webcompat.com/issues/9999">
     </div>
-    <button type="submit" class="btn btn-lg btn-info btn-xs-full">Submit</button>
+    <button type="submit" class="button submit-button">Submit</button>
   </form>
 
   <div class="afterSubmitInfo hidden">

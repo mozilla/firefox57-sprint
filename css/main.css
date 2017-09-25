@@ -195,6 +195,12 @@ h2 {
   width: 200px;
 }
 
+.submit-button {
+  background-color: #59b5b0;
+  color: #fff;
+  border: none;
+}
+
 .map-canvas {
   height: 30rem;
 }
@@ -626,4 +632,51 @@ footer .footer-content a {
 .content-box p {
   font-size: 16px;
   line-height: 26px;
+}
+
+#reporting-form label,
+#reporting-form input,
+#reporting-form button,
+#reporting-form fieldset {
+  display: block;
+}
+
+#reporting-form label {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  padding-bottom: 10px;
+}
+
+#reporting-form p {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.2px;
+}
+
+#reporting-form input {
+  width: 50%;
+  height: 30px;
+  font-size: 20px;
+}
+
+#reporting-form fieldset {
+  margin: 20px 0 20px 0;
+  display: inline-block;
+  border: none;
+  padding: 0;
+}
+
+#reporting-form fieldset input {
+  display: inline;
+  width: inherit;
+  height: 20px;
+  font-size: 20px;
+}
+#reporting-form fieldset label {
+  padding: 10px 0 0 0;
+}
+
+#reporting-form button {
+  margin-top: 20px;
+  cursor: pointer;
 }
