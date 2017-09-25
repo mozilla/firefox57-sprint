@@ -12,7 +12,7 @@ const ReportingForm = {
 
   submit: function() {
     var form = document.querySelector('#reporting-form');
-    var baseURL = 'https://docs.google.com/a/picobudget.com/forms/d/e/1FAIpQLSdvYUo_iay2hRYK0kCBt5WLQmOYukPcLL3kYPZZqzds_--hcg/formResponse?';
+    var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdvYUo_iay2hRYK0kCBt5WLQmOYukPcLL3kYPZZqzds_--hcg/formResponse?';
     var submitRef = '&submit=Submit';
 
     var nicknameValue = document.querySelector('#nicknameInput').value;
