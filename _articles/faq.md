@@ -3,6 +3,10 @@ layout: simple
 title: Frequently Asked Questions
 ---
 
+# Frequently Asked Questions
+
+<div class="content-box faq" markdown="1">
+
 ### What is this campaign?
 With the introduction of Stylo on Nightly we know that websites might break. The Firefox team is not able to test all of those websites, especially the local ones. For that reason we need your help to test as many local websites as possible.
 
@@ -20,3 +24,5 @@ Yes, you can. However, we are aiming for those dates to ensure that you particip
 
 ### If I am a host, can I request budget and swag?
 Yes! You find more information on how to request swag and budget on the <a href="{{ '/host/' | prepend: site.baseurl }}">Host</a> page. Just remember that you can request budget only after your event is done.
+
+</div>
