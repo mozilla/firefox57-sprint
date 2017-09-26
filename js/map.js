@@ -6,6 +6,8 @@ class GooleMapsMap {
     // spread sheet keys
     this.CITY_KEY = 'City';
     this.COUNTRY_KEY = 'Country';
+    this.LAT_KEY = 'Lat';
+    this.LNG_KEY = 'Lng';
     this.REGISTRATION_KEY = 'RegistrationLink';
     this.getCountryCode = getCountryCode;
     this.linkCountry = linkCountry;
@@ -29,32 +31,30 @@ class GooleMapsMap {
     });
 
     this.events.forEach((event) => {
-      this.getPosition(event[this.COUNTRY_KEY], event[this.CITY_KEY]).then((response) => {
-        return response.json();
-      }).then((result) => {
-        if (result.results.length === 0) {
-          return;
-        }
+      const eventPosition = { 
+        lat: parseFloat(event[this.LAT_KEY]), 
+        lng: parseFloat(event[this.LNG_KEY]),
+      };
+      console.log(eventPosition);
+      
+      if (eventPosition == { lat: 0, lng:0 }) {
+        console.error(`Position not found ${event}`);
+        return;
+      }
 
-        const position = result.results[0].geometry.location;
-        const marker = new google.maps.Marker({
-          position: position,
-          country: event[this.COUNTRY_KEY],
-          icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8'
-        });
-        marker.setMap(googleMapsMap);
-        if (this.linkCountry) {
-          google.maps.event.addListener(marker, 'click', () => {
-            const coutryId = this.getCountryCode(marker.country)
-              window.location.hash = coutryId;
-          });
-        }
+      const marker = new google.maps.Marker({
+        position: eventPosition,
+        country: event[this.COUNTRY_KEY],
+        icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8'
       });
+      marker.setMap(googleMapsMap);
+      if (this.linkCountry) {
+        google.maps.event.addListener(marker, 'click', () => {
+          const coutryId = this.getCountryCode(marker.country)
+            window.location.hash = coutryId;
+        });
+      }
     });
-  }
-
-  getPosition(country, city) {
-    return fetch(this.GEOCODE_API + `${city},${country}`);
   }
 
   getStyles() {
