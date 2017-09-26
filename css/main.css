@@ -17,7 +17,6 @@ h1 {
   line-height: 1.12;
   letter-spacing: 0.4px;
   color: #558194;
-  width: 30%;
 }
 
 @media all and (max-width: 768px) {
@@ -91,6 +90,7 @@ h2 {
   .top-header nav ul {
     display: block;
     line-height: 25px;
+    padding-left: 0;
   }
 }
 
@@ -214,10 +214,9 @@ h2 {
 
 footer {
   background:
-    url('/img/img-planet-closeup.svg') bottom right no-repeat,
+    url('/img/img-planet-closeup.svg') 150% 100% no-repeat,
     linear-gradient(to top, #535382, #2d2c55);
-  padding-top: 30px;
-  padding-left: 30px;
+  padding: 30px 50px 0px 50px;
   display: flex;
   flex-direction: row;
   height: 300px;
@@ -262,16 +261,21 @@ footer .icons a {
   text-decoration: none;
 }
 
+footer .icons a:hover {
+  box-shadow: inset 0 -4px 0 #87d3e7;
+}
+
 footer .footer-content {
   font-family: 'Fira Sans';
   font-size: 10px;
   letter-spacing: -0.2px;
   color: #ffffff;
-  width: 30%;
+  width: 100%;
 }
 
 footer .footer-content p {
   opacity: 0.5;
+  width: 50%;
 }
 
 footer .footer-content a {
@@ -318,6 +322,7 @@ footer .footer-content a {
 .home header {
   background-image: url('/img/img-header.svg');
   background-size: cover;
+  background-position: center center;
   text-align: center;
 }
 
@@ -337,7 +342,7 @@ footer .footer-content a {
   font-weight: 600;
   font-size: 26px;
   font-weight: 600;
-  line-height: 0.79;
+  line-height: 1;
   letter-spacing: 8.4px;
   color: #6bc2f1;
   opacity: 0.6;
@@ -346,6 +351,8 @@ footer .footer-content a {
 .home header #countdown,
 .home header .sites-tested {
   letter-spacing: 1.7px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home header .intro {
@@ -397,6 +404,10 @@ footer .footer-content a {
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .home header {
+    padding-bottom: 20vh;
   }
 
   .home header h1 {
@@ -455,6 +466,10 @@ footer .footer-content a {
   .home .action-buttons {
     flex-direction: column;
   }
+
+  .home .action-buttons img {
+    width: 70%;
+  }
 }
 
 .home .events {
@@ -485,6 +500,10 @@ footer .footer-content a {
   letter-spacing: -0.3px;
   color: #c2e8f9;
   margin-bottom: 0;
+}
+
+.home .info-buttons a:first-child:hover {
+  box-shadow: none;
 }
 
 .home .info-buttons .title {
@@ -617,6 +636,10 @@ footer .footer-content a {
   background-color: #f2f2f2;
 }
 
+.content h1 {
+  margin-top: 0;
+}
+
 @media all and (max-width: 768px) {
   .host .content,
   .participate .content,
@@ -654,9 +677,11 @@ footer .footer-content a {
 }
 
 .map-sites div hr {
-  width:35%;
-  border-top:2px solid #59b5b0;;
-  border-bottom: 2px solid #59b5b0;;
+  width: 35%;
+  border-top: 2px solid #59b5b0;
+  border-bottom: 2px solid #59b5b0;
+  border-left: none;
+  border-right: none;
   height: 3px;
 }
 

@@ -6,7 +6,6 @@ title: REGISTER
 <link href="https://s3.amazonaws.com/mozillascience/mapglyphs/mapglyphs.css" rel="stylesheet">
 
 <h3>Find events near you!</h3>
-<p>Find an event near you or organize your own!</p>
 
 <div class="map-canvas">
   <!--  map -->
