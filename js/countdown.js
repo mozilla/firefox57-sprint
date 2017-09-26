@@ -27,9 +27,12 @@
 
     var formatted = countDays + ' days ' + countHours + ' hours ' + countMinutes + ' minutes ' + countSeconds + ' seconds';
     countdownElement.textContent = formatted;
+    countdownElement.classList.remove('hidden');
   }
 
   var interval = setInterval(function() {
     count();
   }, 1000);
+
+  count();
 })();
