@@ -9,7 +9,7 @@ class GooleMapsMap {
     this.LAT_KEY = 'Lat';
     this.LNG_KEY = 'Lng';
     this.REGISTRATION_KEY = 'RegistrationLink';
-    this.MARKER_ICON = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
+    this.MARKER_ICON = 'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
     this.getCountryCode = getCountryCode;
     this.linkCountry = linkCountry;
   }
