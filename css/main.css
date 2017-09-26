@@ -20,6 +20,13 @@ h1 {
   width: 30%;
 }
 
+@media all and (max-width: 768px) {
+  h1 {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
 h2 {
   font-size: 20px;
   font-weight: 400;
@@ -75,6 +82,18 @@ h2 {
   list-style-type: none;
 }
 
+@media all and (max-width: 768px) {
+  .top-header {
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .top-header nav ul {
+    display: block;
+    line-height: 25px;
+  }
+}
+
 .top-header nav ul li {
   padding-left: 20px;
 }
@@ -98,22 +117,10 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
-  background-color: black;
   color: white;
   display: inline-block;
-  line-height: 32px;
-}
-
-.host .top-header .logo-subtext {
-  background-color: #59B5B0;
-}
-
-.participate .top-header .logo-subtext {
-  background-color: #7474B5;
-}
-
-.simple .top-header .logo-subtext {
-  background-color: #1C1A42;
+  /*line-height: 32px;
+  background-color: black;*/
 }
 
 .event-details {
@@ -272,6 +279,13 @@ footer .footer-content a {
   color: inherit;
 }
 
+@media all and (max-width: 768px) {
+  footer {
+    background: linear-gradient(to top, #535382, #2d2c55);
+    height: 100%;
+  }
+}
+
 .home .spaceship {
   width: 250px;
   position: relative;
@@ -291,6 +305,14 @@ footer .footer-content a {
   position: relative;
   top: 175px;
   left: 53%;
+}
+
+@media all and (max-width: 768px) {
+  .home .spaceship,
+  .home .spaceship-path,
+  .home .flag {
+    display: none;
+  }
 }
 
 .home header {
@@ -370,6 +392,22 @@ footer .footer-content a {
   margin-top: 40px;
 }
 
+@media all and (max-width: 768px) {
+  .home .description {
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home header h1 {
+    width: 100%;
+  }
+
+  .home header .intro {
+    padding-top: 50px;
+  }
+}
+
 .home .action-buttons {
   display: flex;
   text-align: center;
@@ -411,6 +449,12 @@ footer .footer-content a {
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #FFF;
+}
+
+@media all and (max-width: 768px) {
+  .home .action-buttons {
+    flex-direction: column;
+  }
 }
 
 .home .events {
@@ -461,6 +505,16 @@ footer .footer-content a {
   width: 90px;
 }
 
+@media all and (max-width: 768px) {
+  .home .info-buttons {
+    flex-direction: column;
+  }
+
+  .home .info-buttons div {
+    margin-top: 50px;
+  }
+}
+
 .home .interested {
   height: 100px;
   background-color: #6fcac5;
@@ -477,6 +531,18 @@ footer .footer-content a {
   font-weight: 500;
   letter-spacing: -0.6px;
   color: #ffffff;
+}
+
+@media all and (max-width: 768px) {
+  .home .interested {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .home .interested p {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .host header {
@@ -500,6 +566,16 @@ footer .footer-content a {
   line-height: 1.12;
   letter-spacing: 0.4px;
   width: 35%;
+}
+
+@media all and (max-width: 768px) {
+  .host header h1,
+  .host header h2,
+  .participate header h1,
+  .participate header h2 {
+    width: calc(100% - 20px);
+    padding-left: 20px;
+  }
 }
 
 .host header h1,
@@ -539,6 +615,14 @@ footer .footer-content a {
   font-family: 'Fira Sans';
   padding: 50px 50px 50px 50px;
   background-color: #f2f2f2;
+}
+
+@media all and (max-width: 768px) {
+  .host .content,
+  .participate .content,
+  .simple .content {
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 .host h3,
@@ -634,6 +718,13 @@ footer .footer-content a {
   line-height: 26px;
 }
 
+@media all and (max-width: 768px) {
+  .content-box {
+    max-width: 100%;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
 #reporting-form label,
 #reporting-form input,
 #reporting-form button,
@@ -679,4 +770,21 @@ footer .footer-content a {
 #reporting-form button {
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  #reporting-form label,
+  #reporting-form input,
+  #reporting-form button,
+  #reporting-form fieldset {
+    width: 100%;
+  }
+
+  #reporting-form input {
+    font-size: 16px;
+  }
+
+  #reporting-form fieldset label {
+    width: inherit;
+  }
 }
