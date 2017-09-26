@@ -35,7 +35,6 @@ class GooleMapsMap {
         lat: parseFloat(event[this.LAT_KEY]), 
         lng: parseFloat(event[this.LNG_KEY]),
       };
-      console.log(eventPosition);
       
       if (eventPosition == { lat: 0, lng:0 }) {
         console.error(`Position not found ${event}`);
