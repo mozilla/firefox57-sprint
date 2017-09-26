@@ -11,7 +11,7 @@ class GooleMapsMap {
     this.REGISTRATION_KEY = 'RegistrationLink';
     this.HOST_KEY = 'FullName';
     this.DATE_KEY = 'Date';
-    this.MARKER_ICON = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
+    this.MARKER_ICON = 'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
     this.getCountryCode = getCountryCode;
     this.linkCountry = options.hasContainerEventList;
     this.hasEventDetail = options.hasContainerEventDetail;
