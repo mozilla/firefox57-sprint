@@ -9,6 +9,7 @@ class GooleMapsMap {
     this.LAT_KEY = 'Lat';
     this.LNG_KEY = 'Lng';
     this.REGISTRATION_KEY = 'RegistrationLink';
+    this.MARKER_ICON = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
     this.getCountryCode = getCountryCode;
     this.linkCountry = linkCountry;
   }
@@ -44,13 +45,13 @@ class GooleMapsMap {
       const marker = new google.maps.Marker({
         position: eventPosition,
         country: event[this.COUNTRY_KEY],
-        icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8'
+        icon: this.MARKER_ICON,
       });
       marker.setMap(googleMapsMap);
       if (this.linkCountry) {
         google.maps.event.addListener(marker, 'click', () => {
-          const coutryId = this.getCountryCode(marker.country)
-            window.location.hash = coutryId;
+          const coutryId = this.getCountryCode(marker.country);
+          window.location.hash = coutryId;
         });
       }
     });
