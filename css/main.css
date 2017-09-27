@@ -94,6 +94,12 @@ h2 {
   }
 }
 
+@media all and (min-width: 1500px) {
+  .top-header nav {
+    text-align: left;
+  }
+}
+
 .top-header nav ul li {
   padding-left: 20px;
 }
@@ -335,8 +341,14 @@ footer .footer-content a {
 .home header {
   background: #f3f3f3 url('/img/img-header.svg');
   background-size: cover;
-  background-position: center center;
+  background-position: inherit;
   text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  .home header {
+    background-position: center center;
+  }
 }
 
 .home header h1 {
