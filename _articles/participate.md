@@ -30,13 +30,13 @@ title: Attend an Event
   <div class="nightly">
     <a href="{{ '/reporting/' | prepend: site.baseurl }}"><img src="/img/beta-logo.png" alt="" /></a>
     <p>
-      Install <a herf="https://www.mozilla.org/en-US/firefox/channel/desktop/#beta">Firefox Beta</a> for Desktop
+      Install <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#beta">Firefox Beta</a> for Desktop
     </p>
   </div>
   <div class="alexa">
     <a href="{{ '/leaderboard/' | prepend: site.baseurl }}"><img src="/img/icon-color-browser.svg" alt="" /></a>
     <p>
-      Check the <a herf="https://www.alexa.com/topsites/countries">Alexa list</a> of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
+      Check the <a href="https://www.alexa.com/topsites/countries">Alexa list</a> of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
     </p>
   </div>
   <div class="report-attend">
