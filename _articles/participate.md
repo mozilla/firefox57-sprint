@@ -17,7 +17,7 @@ title: Attend an Event
 
 You prefer to participate at the campaign from the comfort of your couch? That’s totally fine! Here is how:
 
-* Install [Nightly](https://nightly.mozilla.org) for Desktop
+* Install [Firefox Beta](https://www.mozilla.org/en-US/firefox/channel/desktop/#beta) for Desktop
 * Check the [Alexa list](https://www.alexa.com/topsites/countries) of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
 * Once you have finished testing a website go and [report it on the report form]({{ '/reporting/' | prepend: site.baseurl }}), you will find all the info you need on how to report your work
 * Keep doing the awesome work and make Firefox better!
