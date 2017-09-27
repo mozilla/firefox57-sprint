@@ -5,14 +5,15 @@ title: "Leaderboard"
 
 # Be proud of your progress
 
+<h2>
+  <span class="capitalize">T</span>
+  <span class="capitalize-content">
+    his is the current ranking. Scores are calculated by assigning<br />1 point for each report and 3 for each issue.
+  </span>
+</h2>
+
 <div class="content-box">
   <table id="leaderboard" class="hidden">
-    <thead>
-      <tr>
-        <th>Nickname</th>
-        <th>Number of tested sites</th>
-      </tr>
-    </thead>
     <tbody>
     </tbody>
   </table>

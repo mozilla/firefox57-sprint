@@ -15,7 +15,7 @@
 
   function processInfo(data, tabletop) {
     var groupedByNickname = groupByNickname(data);
-    groupedByNickname.sort(sortByAmount);
+    groupedByNickname.sort(sortByScore);
 
     document.querySelector('#loading').classList.add('hidden');
 
@@ -31,8 +31,16 @@
       row.appendChild(nameCell);
 
       var totalCell = document.createElement('td');
-      totalCell.textContent = entry.amount;
+      totalCell.innerHTML = entry.amount + '<span class="sites">sites</span>';
       row.appendChild(totalCell);
+
+      var issuesCell = document.createElement('td');
+      issuesCell.innerHTML = entry.issues + '<span class="issues">issues</span>';
+      row.appendChild(issuesCell);
+
+      var scoreCell = document.createElement('td');
+      scoreCell.innerHTML = entry.score + '<span class="score">score</span>';
+      row.appendChild(scoreCell);
 
       leaderboardTableBody.appendChild(row);
       document.querySelector('#leaderboard').classList.remove('hidden');
@@ -48,12 +56,20 @@
       });
 
       if (existingNicknameEntry) {
-        return existingNicknameEntry.amount++;
+        existingNicknameEntry.amount++;
+        existingNicknameEntry.issues = entry.IssueFound === 'Yes' ?
+          existingNicknameEntry.issues + 1 :
+          existingNicknameEntry.issues;
+        existingNicknameEntry.score = existingNicknameEntry.amount + 3 * existingNicknameEntry.issues;
+        return;
       }
 
+      console.log(entry);
       const newNicknameEntry = {
         name: entry.Nickname,
-        amount: 1
+        amount: 1,
+        issues: entry.IssueFound === 'Yes' ? 1 : 0,
+        score: 1 + (entry.IssueFound === 'Yes' ? 3 * 1 : 0)
       };
 
       result.push(newNicknameEntry);
@@ -62,9 +78,9 @@
     return result;
   }
 
-  function sortByAmount(a, b) {
-    if (a.amount > b.amount) { return -1; }
-    if (a.amount < b.amount) { return 1; }
+  function sortByScore(a, b) {
+    if (a.score > b.score) { return -1; }
+    if (a.score < b.score) { return 1; }
 
     return 0;
   }
