@@ -338,6 +338,13 @@ footer .footer-content a {
   }
 }
 
+@media all and (max-width: 1200px) {
+  /* TODO: fix positioning on big screens and remove this */
+  .home .flag {
+    display: none;
+  }
+}
+
 .home header {
   background: #f3f3f3 url('/img/img-header.svg');
   background-size: cover;
