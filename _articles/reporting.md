@@ -39,6 +39,7 @@ title: "Reporting"
       <label for="issueWebcompatInput">Please head over to <a href="https://webcompat.com/">webcompat.com</a> and file an issue with your testing result and then enter the submitted report link here.</label>
       <input type="url" class="form-control" id="issueWebcompatInput" placeholder="https://webcompat.com/issues/9999">
     </div>
+    <p class="form-error hidden">Please check all form fields to make sure everything required is filled out!</p>
     <button type="submit" class="button submit-button">Submit</button>
   </form>
 

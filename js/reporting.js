@@ -24,6 +24,12 @@ const ReportingForm = {
     var webcompatIssueValue = document.querySelector('#issueWebcompatInput').value;
     var webcompatIssueEntry = 'entry.908686419';
 
+    if (!websiteValue || !issueFoundValue ||
+        (issueFoundValue === 'Yes' && !webcompatIssueValue)) {
+      document.querySelector('.form-error').classList.remove('hidden');
+      return false;
+    }
+
     var submitURL = baseURL +
         nicknameEntry + "=" + nicknameValue + "&" +
         websiteEntry + "=" + websiteValue + "&" +
