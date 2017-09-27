@@ -281,7 +281,7 @@ footer .footer-content a {
   color: inherit;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1150px) {
   footer {
     background: linear-gradient(to top, #535382, #2d2c55);
     height: 100%;
