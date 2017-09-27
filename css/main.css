@@ -883,6 +883,12 @@ h3.content-title {
   width: 114px;
 }
 
+@media all and (max-width: 768px) {
+  .title-frame {
+    display: none;
+  }
+}
+
 .title-frame--rotate-180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
