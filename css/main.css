@@ -865,3 +865,28 @@ footer .footer-content a {
 .capitalize-content {
   display: inline-block;
 }
+
+h3.content-title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.content-title--uppercase {
+  text-transform: uppercase; 
+}
+
+.title-frame {
+  background: url('/img/title-frame.png');
+  background-size: contain;
+  display: inline-block;
+  height: 20px;
+  width: 114px;
+}
+
+.title-frame--rotate-180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
