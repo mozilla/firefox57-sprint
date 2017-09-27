@@ -3,13 +3,15 @@ layout: participate
 title: Attend an Event
 ---
 
-<div class="content-box" markdown="1">
+<div class="content-box content-box--full" markdown="1">
 
 ### Steps on how to sign up for a local event
 
 * Go to the <a href="{{ '/register/' | prepend: site.baseurl }}">Registration</a> page and look for an event in your area
 * Click on the event you are interested in and you will be redirected to the signup page for that event
 * If there is no event in your area, consider <a href="{{ '/host/' | prepend: site.baseurl }}">hosting</a> one yourself :)
+
+{% include map.html %}
 
 ### Do the action solo
 
