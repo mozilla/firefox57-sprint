@@ -136,7 +136,7 @@ h2 {
 }
 
 .content-box--full .event-details {
-  padding-left: 24px;
+  padding-left: 0;
 }
 
 .event-details h5 {
@@ -527,49 +527,70 @@ footer .footer-content a {
   flex: 2;
 }
 
-.home .info-buttons {
-  background-image: linear-gradient(to bottom, #535382, #2d2c55);
+.info-buttons {
   display: flex;
   text-align: center;
   font-family: 'Fira Sans';
   padding: 56px 0;
 }
 
-.home .info-buttons p {
+.home .info-buttons {
+  background-image: linear-gradient(to bottom, #535382, #2d2c55);
+}
+
+.info-buttons p {
   font-size: 14px;
   letter-spacing: -0.3px;
-  color: #c2e8f9;
   margin-bottom: 0;
 }
 
-.home .info-buttons a:first-child:hover {
+.home .info-buttons p {
+  color: #c2e8f9;
+}
+
+.info-buttons a:first-child:hover {
   box-shadow: none;
 }
 
-.home .info-buttons .title {
+.info-buttons .title {
   font-size: 28px;
   letter-spacing: -0.6px;
-  color: #c2e8f9;
   text-decoration: none;
 }
 
-.home .info-buttons .report,
-.home .info-buttons .leaderboard,
-.home .info-buttons .github {
+.home .info-buttons .title {
+  color: #c2e8f9;
+}
+
+.info-buttons .report,
+.info-buttons .leaderboard,
+.info-buttons .nightly,
+.info-buttons .alexa,
+.info-buttons .report-attend,
+.info-buttons .github {
   flex: 1;
 }
 
-.home .info-buttons .report img,
-.home .info-buttons .github img {
+.info-buttons .nightly,
+.info-buttons .alexa,
+.info-buttons .report-attend {
+  padding: 0 36px;
+}
+
+.info-buttons .nightly img,
+.info-buttons .alexa img,
+.info-buttons .report-attend img,
+.info-buttons .report img,
+.info-buttons .github img {
   width: 90px;
 }
 
 @media all and (max-width: 768px) {
-  .home .info-buttons {
+  .info-buttons {
     flex-direction: column;
   }
 
-  .home .info-buttons div {
+  .info-buttons div {
     margin-top: 50px;
   }
 }
@@ -791,7 +812,6 @@ footer .footer-content a {
 }
 
 .content-box p {
-  font-size: 16px;
   line-height: 26px;
 }
 
@@ -917,6 +937,17 @@ h3.content-title {
   padding-top: 20px;
 }
 
-.participate .content p {
+.participate p.participate-theaser {
   text-align: center;
+}
+
+.participate .content p.help {
+  text-align: left;
+  color: #ADBEC6;
+  padding: 50px 0 6px 0;
+  font-size: 12px;
+}
+
+.participate section.content {
+  padding-bottom: 6px;
 }
