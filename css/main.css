@@ -135,6 +135,10 @@ h2 {
   padding-left: 60px;
 }
 
+.content-box--full .event-details {
+  padding-left: 24px;
+}
+
 .event-details h5 {
   flex: 1;
   font-size: 16px;
@@ -771,6 +775,10 @@ footer .footer-content a {
   max-width: 100%;
 }
 
+.content-box--full ol li {
+  padding: 16px 0;
+} 
+
 .content-box h3 {
   border-top: solid 3px rgba(195, 232, 248, 0.5);
   padding-top: 18px;
@@ -883,6 +891,14 @@ h3.content-title {
   width: 114px;
 }
 
+.title-frame-grey {
+  background: url('/img/title-frame-grey.png');
+  background-size: contain;
+  display: inline-block;
+  height: 20px;
+  width: 114px;
+}
+
 @media all and (max-width: 768px) {
   .title-frame {
     display: none;
@@ -895,4 +911,12 @@ h3.content-title {
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.participate .content .content-title {
+  padding-top: 20px;
+}
+
+.participate .content p {
+  text-align: center;
 }
