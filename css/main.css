@@ -514,12 +514,12 @@ footer .footer-content a {
   margin: 0 auto;
 }
 
-.home .events .map {
+.map {
   display: flex;
   font-family: 'Fira Sans';
 }
 
-.home .events .map .map-canvas {
+.map .map-canvas {
   flex: 2;
 }
 
@@ -767,6 +767,10 @@ footer .footer-content a {
   margin-top: 20px;
 }
 
+.content-box--full {
+  max-width: 100%;
+}
+
 .content-box h3 {
   border-top: solid 3px rgba(195, 232, 248, 0.5);
   padding-top: 18px;
@@ -852,4 +856,12 @@ footer .footer-content a {
   #reporting-form fieldset label {
     width: inherit;
   }
+}
+
+.capitalize {
+  font-size: 100px;
+  padding-right: 6px;
+}
+.capitalize-content {
+  display: inline-block;
 }

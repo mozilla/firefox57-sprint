@@ -44,32 +44,8 @@ layout: default
 
   <section class="events">
     <h2>Planned events</h2>
-    <div class="button-container mobile-only">
-      <a class="button attend-button" href="{{ '/register/' | prepend: site.baseurl }}">Find a local event</a>
-    </div>
-    <div class="map desktop-only">
-      <div class="event-details">
-        <p class="event-details-no-selected">Please select an event on the map</p>
-        <div class="event-detail hidden">
-          <h5>Date</h5>
-          <p id="event-date">No event selected</p>
-
-          <h5>City</h5>
-          <p id="event-city">No event selected</p>
-
-          <h5>Country</h5>
-          <p id="event-country">No event selected</p>
-
-          <h5>Hosted by</h5>
-          <p id="event-host">No event selected</p>
-
-          <a id="event-link" class="button front-register-button" href="">Book your seat</a>
-        </div>
-      </div>
-      <div class="map-canvas">
-        <!--  map -->
-      </div>
-    </div>
+    
+    {% include map.html %}
   </section>
 
   <section class="info-buttons">
@@ -96,8 +72,5 @@ layout: default
   </section>
 </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script src="{{ site.baseurl }}/js/countdown.js"></script>
 <script src="{{ site.baseurl }}/js/sites-tested.js"></script>
-<script src="{{ site.baseurl }}/js/map.js"></script>
-<script src="{{ site.baseurl }}/js/mapData.js"></script>
