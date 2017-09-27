@@ -333,7 +333,7 @@ footer .footer-content a {
 }
 
 .home header {
-  background-image: url('/img/img-header.svg');
+  background: #f3f3f3 url('/img/img-header.svg');
   background-size: cover;
   background-position: center center;
   text-align: center;
