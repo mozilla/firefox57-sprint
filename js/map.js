@@ -32,7 +32,7 @@ class GooleMapsMap {
       zoom,
       center: new google.maps.LatLng(position.lat, position.lng),
       mapTypeId: 'roadmap',
-      styles: this.getStyles(),
+      //styles: this.getStyles(),
     });
 
     this.events.forEach((event) => {

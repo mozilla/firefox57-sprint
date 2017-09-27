@@ -12,7 +12,7 @@ So you decided to host an event, congratulations! Your efforts will help Firefox
 ### Workflow
 
 * Introduction talk, why this work is important for Firefox in your region
-* Participants install [Nightly](https://nightly.mozilla.org) for Desktop
+* Participants install [Firefox Beta](https://www.mozilla.org/en-US/firefox/channel/desktop/#beta) for Desktop
 * Check the [Alexa list](https://www.alexa.com/topsites/countries) of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
 * Once you have finished testing a website go and [report it on the report form]({{ '/reporting/' | prepend: site.baseurl }}), you will find all the info you need on how to report your work
 * Keep doing the awesome work and make Firefox better!

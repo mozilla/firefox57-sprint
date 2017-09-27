@@ -3,7 +3,6 @@ layout: participate
 title: Attend an Event
 ---
 <div class="content-box content-box--full" markdown="1">
-
   <h3 class="content-title">
     <span class="title-frame"></span>
     Steps on how to sign up for a local event
@@ -31,7 +30,7 @@ title: Attend an Event
   <div class="nightly">
     <a href="{{ '/reporting/' | prepend: site.baseurl }}"><img src="/img/beta-logo.png" alt="" /></a>
     <p>
-      Install <a herf="https://nightly.mozilla.org">Nightly</a> for Desktop
+      Install <a herf="https://www.mozilla.org/en-US/firefox/channel/desktop/#beta">Firefox Beta</a> for Desktop
     </p>
   </div>
   <div class="alexa">
