@@ -15,22 +15,23 @@
 
   function processInfo(data, tabletop) {
     var groupedByNickname = groupByNickname(data);
+    groupedByNickname.sort(sortByAmount);
 
     document.querySelector('#loading').classList.add('hidden');
 
-    if (Object.keys(groupedByNickname).length === 0) {
+    if (groupedByNickname.length === 0) {
       document.querySelector('#no-results').classList.remove('hidden');
     }
 
-    Object.keys(groupedByNickname).forEach(function(name) {
+    groupedByNickname.forEach(function(entry) {
       var row = document.createElement('tr');
 
       var nameCell = document.createElement('td');
-      nameCell.textContent = name;
+      nameCell.textContent = entry.name;
       row.appendChild(nameCell);
 
       var totalCell = document.createElement('td');
-      totalCell.textContent = groupedByNickname[name];
+      totalCell.textContent = entry.amount;
       row.appendChild(totalCell);
 
       leaderboardTableBody.appendChild(row);
@@ -39,17 +40,33 @@
   }
 
   function groupByNickname(entries) {
-    var result = {};
+    var result = [];
 
-    entries.map(function(entry) {
-      if (result[entry.Nickname]) {
-        result[entry.Nickname]++;
-      } else {
-        result[entry.Nickname] = 1;
+    entries.forEach(function(entry) {
+      const existingNicknameEntry = result.find(function(existingEntry) {
+        return existingEntry.name === entry.Nickname;
+      });
+
+      if (existingNicknameEntry) {
+        return existingNicknameEntry.amount++;
       }
+
+      const newNicknameEntry = {
+        name: entry.Nickname,
+        amount: 1
+      };
+
+      result.push(newNicknameEntry);
     });
 
     return result;
+  }
+
+  function sortByAmount(a, b) {
+    if (a.amount > b.amount) { return -1; }
+    if (a.amount < b.amount) { return 1; }
+
+    return 0;
   }
 
   window.addEventListener('DOMContentLoaded', initTabletop);
