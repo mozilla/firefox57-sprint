@@ -44,7 +44,10 @@ layout: default
 
   <section class="events">
     <h2>Planned events</h2>
-    <div class="map">
+    <div class="button-container mobile-only">
+      <a class="button attend-button" href="{{ '/register/' | prepend: site.baseurl }}">Find a local event</a>
+    </div>
+    <div class="map desktop-only">
       <div class="event-details">
         <p class="event-details-no-selected">Please select an event on the map</p>
         <div class="event-detail hidden">

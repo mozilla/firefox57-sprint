@@ -155,15 +155,15 @@ h2 {
 .button {
   margin-top: 30px;
   font-family: 'Fira Sans';
-  display: block;
-  width: 160px;
-  height: 40px;
+  display: inline-block;
   border-radius: 2px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.8px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  padding: 10px 10px;
 }
 
 .button:hover {
@@ -173,39 +173,31 @@ h2 {
 .front-register-button {
   background-color: #88d1f1;
   color: #558194;
-  padding: 20px 0px 0px 20px;
 }
 
 .involve-button {
   background-color: #7474b5;
   color: #fff;
-  padding: 10px 0px 0px 40px;
   margin-top: 0;
-  height: 30px;
 }
 
 .register-button {
   background-color: #59b5b0;
   color: #fff;
-  padding: 10px 0px 0px 20px;
   margin-top: 0;
-  height: 30px;
-  width: 200px;
 }
 
 .attend-button {
   background-color: #7474b5;
   color: #fff;
-  padding: 10px 0px 0px 28px;
   margin-top: 0;
-  height: 30px;
-  width: 200px;
 }
 
 .submit-button {
   background-color: #59b5b0;
   color: #fff;
   border: none;
+  padding: 10px 50px;
 }
 
 .map-canvas {
@@ -287,6 +279,20 @@ footer .footer-content a {
   footer {
     background: linear-gradient(to top, #535382, #2d2c55);
     height: 100%;
+  }
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media all and (max-width: 768px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .desktop-only {
+    display: none !important;
   }
 }
 
@@ -476,6 +482,10 @@ footer .footer-content a {
   background-color: #eef2f4;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.home .events .button-container a {
+  margin: 0 auto;
 }
 
 .home .events .map {
