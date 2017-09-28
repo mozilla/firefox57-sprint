@@ -7,9 +7,13 @@ title: "Reporting"
 
 # Report your testing progress
 
-## Thanks for helping test websites with Firefox Quantum!
-
-## Please share your result with us. The data entered below will be stored in a Google Sheet.
+<h2>
+  <span class="capitalize">T</span>
+  <span class="capitalize-content">
+    hanks for helping test websites with Firefox Quantum!<br /> 
+    Please share your result with us. The data entered below will be stored in a Google Sheet.
+  </span>
+</h2>
 
 <div class="content-box">
   <form id="reporting-form" action="" method="POST" target="no-target">

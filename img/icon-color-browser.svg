@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+    <defs>
+        <filter id="a" width="109.7%" height="109.7%" x="-4.9%" y="-3.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#4F9DFF"/>
+            <stop offset="100%" stop-color="#A838FD"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="nonzero" filter="url(#a)" transform="translate(2 1)">
+        <rect width="72" height="72" fill="#FDFDFD" rx="2"/>
+        <path fill="#999" d="M2 0h68a2 2 0 0 1 2 2v8H0V2a2 2 0 0 1 2-2z"/>
+        <circle cx="5" cy="5" r="2" fill="#ED7161"/>
+        <circle cx="11" cy="5" r="2" fill="#F0C419"/>
+        <circle cx="17" cy="5" r="2" fill="#4FBA6F"/>
+        <path fill="#26ACFF" d="M0 10v24h72V10z"/>
+        <path fill="#BDC3C7" d="M21.103 53.62H8.69a1.241 1.241 0 1 1 0-2.482h12.413a1.241 1.241 0 1 1 0 2.483zM21.103 58.586H8.69a1.241 1.241 0 1 1 0-2.483h12.413a1.241 1.241 0 1 1 0 2.483zM21.103 63.552H8.69a1.241 1.241 0 1 1 0-2.483h12.413a1.241 1.241 0 1 1 0 2.483zM42.207 53.62H29.793a1.241 1.241 0 1 1 0-2.482h12.414a1.241 1.241 0 1 1 0 2.483zM42.207 58.586H29.793a1.241 1.241 0 1 1 0-2.483h12.414a1.241 1.241 0 1 1 0 2.483zM42.207 63.552H29.793a1.241 1.241 0 1 1 0-2.483h12.414a1.241 1.241 0 1 1 0 2.483zM63.31 53.62H50.897a1.241 1.241 0 1 1 0-2.482H63.31a1.241 1.241 0 1 1 0 2.483zM63.31 58.586H50.897a1.241 1.241 0 1 1 0-2.483H63.31a1.241 1.241 0 1 1 0 2.483zM63.31 63.552H50.897a1.241 1.241 0 1 1 0-2.483H63.31a1.241 1.241 0 1 1 0 2.483z"/>
+        <path fill="url(#b)" d="M7.448 30.034h14.897v14.897H7.448zM49.655 30.034h14.897v14.897H49.655zM28.552 30.034h14.897v14.897H28.552z"/>
+    </g>
+</svg>

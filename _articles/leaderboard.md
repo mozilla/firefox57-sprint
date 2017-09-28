@@ -13,6 +13,12 @@ title: "Leaderboard"
 </h2>
 
 <div class="content-box">
+  <h3 class="content-title content-title--uppercase">
+    <span class="title-frame"></span>
+    Leaderboard
+    <span class="title-frame title-frame--rotate-180"></span>
+  </h3> 
+
   <table id="leaderboard" class="hidden">
     <tbody>
     </tbody>
