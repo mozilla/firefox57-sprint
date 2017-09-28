@@ -839,7 +839,7 @@ footer .footer-content a {
 
 .content-box--full ol li {
   padding: 16px 0;
-} 
+}
 
 .content-box h3 {
   border-top: solid 3px rgba(195, 232, 248, 0.5);
@@ -935,13 +935,24 @@ footer .footer-content a {
   display: inline-block;
 }
 
+@media all and (max-width: 768px) {
+  .capitalize {
+    font-size: 40px;
+    padding-right: 0;
+  }
+
+  .capitalize-content {
+    display: inline;
+  }
+}
+
 h3.content-title {
   font-size: 28px;
   text-align: center;
 }
 
 .content-title--uppercase {
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .title-frame {

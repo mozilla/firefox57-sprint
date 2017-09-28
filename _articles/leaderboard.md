@@ -8,7 +8,7 @@ title: "Leaderboard"
 <h2>
   <span class="capitalize">T</span>
   <span class="capitalize-content">
-    his is the current ranking. Scores are calculated by assigning<br />1 point for each report and 3 for each issue.
+    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.
   </span>
 </h2>
 
@@ -17,7 +17,7 @@ title: "Leaderboard"
     <span class="title-frame"></span>
     Leaderboard
     <span class="title-frame title-frame--rotate-180"></span>
-  </h3> 
+  </h3>
 
   <table id="leaderboard" class="hidden">
     <tbody>
