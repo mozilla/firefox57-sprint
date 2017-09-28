@@ -582,7 +582,7 @@ footer .footer-content a {
 .info-buttons .report-attend img,
 .info-buttons .report img,
 .info-buttons .github img {
-  width: 90px;
+  height: 90px;
 }
 
 @media all and (max-width: 768px) {
