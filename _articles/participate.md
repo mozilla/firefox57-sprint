@@ -47,7 +47,4 @@ title: Attend an Event
   </div>
 </section>  
 
-Keep doing the awesome work and make Firefox better!
-
-<p class="help">Help us improve content and <a herf="https://github.com/mozilla/firefox57-sprint/">suggest changes</a> on this page.</p>
-
+<p class="participate-theaser participate-theaser--bottom">Keep doing the awesome work and make Firefox better!</p>

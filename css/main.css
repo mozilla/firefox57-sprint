@@ -981,12 +981,8 @@ h3.content-title {
 .participate p.participate-theaser {
   text-align: center;
 }
-
-.participate .content p.help {
-  text-align: left;
-  color: #ADBEC6;
-  padding: 50px 0 6px 0;
-  font-size: 12px;
+.participate p.participate-theaser--bottom {
+  padding-bottom: 36px
 }
 
 .participate section.content {
