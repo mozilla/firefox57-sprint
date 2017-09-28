@@ -47,4 +47,4 @@ title: Attend an Event
   </div>
 </section>  
 
-<p class="participate-theaser participate-theaser--bottom">Keep doing the awesome work and make Firefox better!</p>
+<p class="participate-theaser">Keep doing the awesome work and make Firefox better!</p>
