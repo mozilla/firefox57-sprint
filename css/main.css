@@ -848,7 +848,7 @@ footer .footer-content a {
   line-height: 26px;
 }
 
-.content-box h3:first-child {
+.content-box h3:first-of-type {
   border-top: none;
 }
 
