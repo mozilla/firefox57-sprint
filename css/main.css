@@ -933,6 +933,7 @@ footer .footer-content a {
 }
 .capitalize-content {
   display: inline-block;
+  max-width: 90%;
 }
 
 @media all and (max-width: 768px) {
@@ -972,6 +973,7 @@ h3.content-title {
 }
 
 @media all and (max-width: 768px) {
+  .title-frame-grey,
   .title-frame {
     display: none;
   }
