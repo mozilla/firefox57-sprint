@@ -1,19 +1,35 @@
 (function() {
   'use strict';
 
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY/pubhtml';
+  var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0';
+  var RANGE = 'A2:E';
+  var SPREADSHEET_ID = '1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY';
+  var publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID +
+    '/values/' + RANGE + '?key=' + API_KEY;
 
   var leaderboardTableBody = document.querySelector('#leaderboard tbody');
 
-  function initTabletop() {
-    Tabletop.init({
-      key: publicSpreadsheetUrl,
-      callback: processInfo,
-      simpleSheet: true
-    });
+  function getData() {
+    fetch(publicEndpoint)
+      .then(function(result) {
+        return result.json();
+      }).then(function(result) {
+        var data = result.values.map(function(entry) {
+          return {
+            Nickname: entry[1],
+            SiteTested: entry[2],
+            IssueFound: entry[3],
+            IssueLink: entry[4]
+          };
+        }).filter(function(entry) {
+          return entry.Nickname;
+        });
+
+        processInfo(data);
+      });
   }
 
-  function processInfo(data, tabletop) {
+  function processInfo(data) {
     var groupedByNickname = groupByNickname(data);
     groupedByNickname.sort(sortByScore);
 
@@ -85,5 +101,5 @@
     return 0;
   }
 
-  window.addEventListener('DOMContentLoaded', initTabletop);
+  window.addEventListener('DOMContentLoaded', getData);
 })();

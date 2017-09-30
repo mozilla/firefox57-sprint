@@ -28,5 +28,4 @@ title: "Leaderboard"
   <p id="no-results" class="hidden">There are currently no reports.</p>
 </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script src="{{ site.baseurl }}/js/leaderboard.js"></script>
