@@ -4,15 +4,34 @@ let map;
   'use strict';
 
   var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0';
-  var RANGE = 'A2:E';
-  var SPREADSHEET_ID = '1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY';
+  var RANGE = 'A2:I';
+  var SPREADSHEET_ID = '11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA';
   var publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID +
     '/values/' + RANGE + '?key=' + API_KEY;
   const API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ';
-  const API_URL = `https://maps.googleapis.com/maps/api/js?key=${API_KEY_MAPS}&callback=mapCallback`;
+  const API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + API_KEY_MAPS + '&callback=mapCallback';
 
   function getData() {
+    fetch(publicEndpoint)
+      .then(function(result) {
+        return result.json();
+      }).then(function(result) {
+        var data = result.values.map(function(entry) {
+          return {
+            Country: entry[1],
+            City: entry[2],
+            Date: entry[3],
+            RegistrationLink: entry[4],
+            FullName: entry[5],
+            Lat: entry[7],
+            Lng: entry[8]
+          };
+        }).filter(function(entry) {
+          return entry.Country;
+        });
 
+        processData(data);
+      });
   }
 
   function processData(events) {
