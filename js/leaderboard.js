@@ -80,7 +80,7 @@
         if (exsitingDomain) {
           return;
         }
-        
+
         existingNicknameEntry.amount++;
         existingNicknameEntry.issues = 
           entry.IssueFound === 'Yes' ?
