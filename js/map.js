@@ -1,8 +1,9 @@
 class GooleMapsMap {
   constructor(apiUrl, events, getCountryCode, options) {
-    this.loadJS(apiUrl);
     this.events = events;
     this.GEOCODE_API = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
+    // add google vendor scripts
+    this.loadJS(apiUrl);
     // spread sheet keys
     this.CITY_KEY = 'City';
     this.COUNTRY_KEY = 'Country';
@@ -15,13 +16,14 @@ class GooleMapsMap {
     this.getCountryCode = getCountryCode;
     this.linkCountry = options.hasContainerEventList;
     this.hasEventDetail = options.hasContainerEventDetail;
+    this.markers = [];
   }
 
   loadJS(file) {
     const jsElement = document.createElement("script");
     jsElement.type = "application/javascript";
     jsElement.src = file;
-    document.body.appendChild(jsElement);
+    document.head.appendChild(jsElement);
   }
 
   initMap(zoom = 2, position = {}) {
@@ -62,6 +64,8 @@ class GooleMapsMap {
           window.location.hash = coutryId;
         });
       }
+      
+      this.markers.push(marker);
 
       if (this.hasEventDetail) {
         google.maps.event.addListener(marker, 'click', () => {
@@ -75,6 +79,11 @@ class GooleMapsMap {
         });
       }
     });
+    
+    // Add a marker clusterer to manage the markers.
+    const markerCluster = new MarkerClusterer(googleMapsMap, this.markers,
+      {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
   }
 
   getStyles() {
