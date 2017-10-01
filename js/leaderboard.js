@@ -70,22 +70,33 @@
       const existingNicknameEntry = result.find(function(existingEntry) {
         return existingEntry.name === entry.Nickname;
       });
-
+      
       if (existingNicknameEntry) {
+        // only count the same domain once
+        const existingDomain = existingNicknameEntry.entries.find((existingEntry) => {
+          return entry.SiteTested == existingEntry.SiteTested;
+        });
+
+        if (existingDomain) {
+          return;
+        }
+
         existingNicknameEntry.amount++;
-        existingNicknameEntry.issues = entry.IssueFound === 'Yes' ?
+        existingNicknameEntry.issues = 
+          entry.IssueFound === 'Yes' ?
           existingNicknameEntry.issues + 1 :
           existingNicknameEntry.issues;
         existingNicknameEntry.score = existingNicknameEntry.amount + 3 * existingNicknameEntry.issues;
+        existingNicknameEntry.entries.push(entry);
         return;
       }
 
-      console.log(entry);
       const newNicknameEntry = {
         name: entry.Nickname,
         amount: 1,
         issues: entry.IssueFound === 'Yes' ? 1 : 0,
-        score: 1 + (entry.IssueFound === 'Yes' ? 3 * 1 : 0)
+        score: 1 + (entry.IssueFound === 'Yes' ? 3 * 1 : 0),
+        entries: [entry],
       };
 
       result.push(newNicknameEntry);
