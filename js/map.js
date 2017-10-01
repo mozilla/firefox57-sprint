@@ -23,7 +23,7 @@ class GooleMapsMap {
     const jsElement = document.createElement("script");
     jsElement.type = "application/javascript";
     jsElement.src = file;
-    document.head.appendChild(jsElement);
+    document.body.appendChild(jsElement);
   }
 
   initMap(zoom = 2, position = {}) {
