@@ -73,11 +73,11 @@
       
       if (existingNicknameEntry) {
         // only count the same domain once
-        const exsitingDomain = existingNicknameEntry.entries.find((existingEntry) => {
+        const exsistingDomain = existingNicknameEntry.entries.find((existingEntry) => {
           return entry.SiteTested == existingEntry.SiteTested;
         });
 
-        if (exsitingDomain) {
+        if (exsistingDomain) {
           return;
         }
 
