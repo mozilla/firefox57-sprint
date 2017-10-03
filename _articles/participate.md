@@ -36,7 +36,7 @@ title: Attend an Event
   <div class="alexa">
     <a href="https://www.alexa.com/topsites/countries"><img src="/img/icon-color-browser.svg" alt="" /></a>
     <p>
-      Check the <a href="https://www.alexa.com/topsites/countries">Alexa list</a> of the most famous websites in your local area and choose the website you want to test. Please don't start at the top to make sure we do not only test the top 10.
+      Check this list of the <a href="https://docs.google.com/spreadsheets/d/1KCT5Ytuu8tyC559TXVo-lIlv4mZVPGhn8qQe-qSTgm8/edit#gid=1569236874">200 most famous websites</a> in your local and choose the website you want to test. If you can't find your country you can also check the <a href="https://www.alexa.com/topsites/countries">Alexa list</a>. Please don't start at the top to make sure we do not only test the first 10.
     </p>
   </div>
   <div class="report-attend">
