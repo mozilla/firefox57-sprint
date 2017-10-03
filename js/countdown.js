@@ -16,7 +16,11 @@
     var distance = END_DATE - today;
     if (distance < 0) {
         clearInterval(interval);
-        document.querySelector('.hero-unit').removeNode(countdownElement);
+        var heroUnit = document.querySelector('.hero-unit');
+        if (heroUnit) {
+          heroUnit.removeNode(countdownElement);
+        }
+
         return;
     }
 

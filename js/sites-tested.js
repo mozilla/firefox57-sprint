@@ -24,7 +24,6 @@
   function processInfo(data, tabletop) {
     var testedSites = filterDuplicates(data);
     var uniqueTestedSites = getUnique(testedSites);
-    console.log(uniqueTestedSites);
     var totalSitesTested = uniqueTestedSites.length;
     sitesTestedElement.textContent = totalSitesTested + ' sites tested already!';
     sitesTestedElement.classList.remove('hidden');
@@ -37,7 +36,7 @@
   }
 
   function mapDomainOnly(entry) {
-    return entry.Website
+    return entry.SiteTested
         .replace('http://', '')
         .replace('https://', '')
         .replace('www.', '');
