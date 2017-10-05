@@ -12,6 +12,8 @@ title: "Leaderboard"
   </span>
 </h2>
 
+<h2>Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Duplicate issues will not be taken into consideration. </h2>
+
 <div class="content-box">
   <h3 class="content-title content-title--uppercase">
     <span class="title-frame"></span>
