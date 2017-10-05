@@ -8,8 +8,8 @@ title: "Leaderboard"
 <h2>
   <span class="capitalize">T</span>
   <span class="capitalize-content">
-    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.
-  <br> Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Dublicate issues will not be taken into consideration<br/>
+    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.</h2>
+<h2>  <br> Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Dublicate issues will not be taken into consideration<br/></h2>
   </span>
 </h2>
 
