@@ -8,11 +8,12 @@ title: "Leaderboard"
 <h2>
   <span class="capitalize">T</span>
   <span class="capitalize-content">
-    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.</h2>
+    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.
   </span>
 </h2>
 
-<h2>  Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Dublicate issues will not be taken into consideration</h2>
+<h2>Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Duplicate issues will not be taken into consideration
+</h2>
 
 <div class="content-box">
   <h3 class="content-title content-title--uppercase">
