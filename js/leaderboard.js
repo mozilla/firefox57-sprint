@@ -31,7 +31,7 @@
 
   function processInfo(data) {
     var groupedByNickname = groupByNickname(data);
-    groupedByNickname.sort(sortByScore);
+    groupedByNickname.sort(sortByName);
 
     document.querySelector('#loading').classList.add('hidden');
 
@@ -39,24 +39,14 @@
       document.querySelector('#no-results').classList.remove('hidden');
     }
 
+    console.log('groupedByNickname', groupedByNickname);
+
     groupedByNickname.forEach(function(entry) {
       var row = document.createElement('tr');
 
       var nameCell = document.createElement('td');
       nameCell.textContent = entry.name;
       row.appendChild(nameCell);
-
-      var totalCell = document.createElement('td');
-      totalCell.innerHTML = entry.amount + '<span class="sites">sites</span>';
-      row.appendChild(totalCell);
-
-      var issuesCell = document.createElement('td');
-      issuesCell.innerHTML = entry.issues + '<span class="issues">issues</span>';
-      row.appendChild(issuesCell);
-
-      var scoreCell = document.createElement('td');
-      scoreCell.innerHTML = entry.score + '<span class="score">score</span>';
-      row.appendChild(scoreCell);
 
       leaderboardTableBody.appendChild(row);
       document.querySelector('#leaderboard').classList.remove('hidden');
@@ -70,7 +60,7 @@
       const existingNicknameEntry = result.find(function(existingEntry) {
         return existingEntry.name === entry.Nickname;
       });
-      
+
       if (existingNicknameEntry) {
         // only count the same domain once
         const existingDomain = existingNicknameEntry.entries.find((existingEntry) => {
@@ -82,7 +72,7 @@
         }
 
         existingNicknameEntry.amount++;
-        existingNicknameEntry.issues = 
+        existingNicknameEntry.issues =
           entry.IssueFound === 'Yes' ?
           existingNicknameEntry.issues + 1 :
           existingNicknameEntry.issues;
@@ -105,9 +95,9 @@
     return result;
   }
 
-  function sortByScore(a, b) {
-    if (a.score > b.score) { return -1; }
-    if (a.score < b.score) { return 1; }
+  function sortByName(a, b) {
+    if (a.name.toLowerCase() > b.name.toLowerCase()) { return 1; }
+    if (a.name.toLowerCase() < b.name.toLowerCase()) { return -1; }
 
     return 0;
   }

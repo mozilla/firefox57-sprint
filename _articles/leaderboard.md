@@ -1,23 +1,16 @@
 ---
 layout: simple
-title: "Leaderboard"
+title: "List of Participants"
 ---
 
 # Be proud of your progress
 
-<h2>
-  <span class="capitalize">T</span>
-  <span class="capitalize-content">
-    his is the current ranking. <br />Total score is 1 point for each report and 3 for each issue.
-  </span>
-</h2>
-
-<h2>Please do not report non-valid issues. Only users with valid issues will be rewarded with swag. Duplicate issues will not be taken into consideration. </h2>
+<h2>We want to ensure that this is a good experience for both the attendees and the bug fixers. For that reason we decided to change the leaderboard with a list of people participating in the initiative. However, we would like to reward people based on the quality of their work and as a result <strong>the top 30 issues that the webcompat team consider as most imactful will rewarded with a t-shirt</strong>.</h2>
 
 <div class="content-box">
   <h3 class="content-title content-title--uppercase">
     <span class="title-frame"></span>
-    Leaderboard
+    Participation List
     <span class="title-frame title-frame--rotate-180"></span>
   </h3>
 
