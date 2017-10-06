@@ -27,7 +27,7 @@ title: "Reporting"
       <input type="url" class="form-control" id="urlInput" placeholder="https://www.mozilla.org">
     </div>
     <fieldset class="form-group" id="issueFoundChoice">
-      <label>Did you find an issue with the tested site?</label>
+      <label>Did you find an issue with the tested site? Read through <a href="http://www.otsukare.info/2017/10/05/what-is-a-webcompat-issue/">these guidelines</a> to make sure your issue is valid</label>
       <div class="form-check">
         <label class="form-check-label">
           <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" onclick="ReportingForm.handleReportingIssueChoice(this);" value="Yes" checked> Yes
