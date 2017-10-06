@@ -14,7 +14,7 @@ So you decided to host an event, congratulations! Your efforts will help Firefox
 * Introduction talk, why this work is important for Firefox in your region
 * Ask the attendees to watch [this video](https://air.mozilla.org/desktop-webcompat-short-version/) explaining what issues they should report
 * Participants install [Firefox Beta](https://www.mozilla.org/en-US/firefox/channel/desktop/#beta) for Desktop
-* Check [this list](https://docs.google.com/spreadsheets/d/1KCT5Ytuu8tyC559TXVo-lIlv4mZVPGhn8qQe-qSTgm8/edit#gid=1569236874) of the 200 most famous website in your local and choose the website you want to test. If you can't find your country you can also check the [Alexa list](https://www.alexa.com/topsites/countries). Please don't start at the top to make sure we do not only test the first 10. 
+* Check [this list](https://docs.google.com/spreadsheets/d/1KCT5Ytuu8tyC559TXVo-lIlv4mZVPGhn8qQe-qSTgm8/edit#gid=1569236874) of the 200 most famous website in your country and choose the website you want to test (NSFW websites are marked red - do open in your responsibility). If you can't find your country you can also check the [Alexa list](https://www.alexa.com/topsites/countries). Please don't start at the top to make sure we do not only test the first 10. 
 * Once you have finished testing a website go and [report it on the report form]({{ '/reporting/' | prepend: site.baseurl }}), you will find all the info you need on how to report your work
 * Keep doing the awesome work and make Firefox better!
 
