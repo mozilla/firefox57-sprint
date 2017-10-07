@@ -79,7 +79,6 @@
     }
 
     const includesWebcompatRepo = link.includes('webcompat.com/issues/');
-    const issueTooOld = false;
     const issueNumber = parseIssueNumber(link);
     const ISSUELIMIT = 10274;
 
