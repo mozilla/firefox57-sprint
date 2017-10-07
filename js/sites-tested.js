@@ -37,8 +37,18 @@
     });
   }
 
+  function sanitize(entries) {
+    return entries
+      .map(function(entry) {
+        entry.SiteTested = entry.SiteTested.trim().toLowerCase();
+
+        return entry;
+      });
+  }
+
   function processInfo(data) {
-    var testedSites = filterDuplicates(data);
+    var sanitizedSites = sanitize(data);
+    var testedSites = filterDuplicates(sanitizedSites);
     var uniqueTestedSites = getUnique(testedSites);
     var totalSitesTested = uniqueTestedSites.length;
     sitesTestedElement.textContent = totalSitesTested + ' sites tested already!';
