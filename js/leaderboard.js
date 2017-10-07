@@ -67,6 +67,29 @@
     return toSanitize.trim().toLowerCase();
   }
 
+  function parseIssueNumber(link) {
+    const parts = link.split('/');
+    const issueNumberIfRealLink = parts[parts.length - 1];
+    return parseInt(issueNumberIfRealLink, 10);
+  }
+
+  function isValidIssue(option, link) {
+    if (!link) {
+      return false;
+    }
+
+    const includesWebcompatRepo = link.includes('webcompat.com/issues/');
+    const issueTooOld = false;
+    const issueNumber = parseIssueNumber(link);
+    const ISSUELIMIT = 10274;
+
+    if (option !== 'Yes' || !includesWebcompatRepo || issueNumber < ISSUELIMIT) {
+      return false;
+    }
+
+    return true;
+  }
+
   function groupByNickname(entries) {
     var result = [];
 
@@ -89,7 +112,7 @@
 
         existingNicknameEntry.amount++;
         existingNicknameEntry.issues =
-          entry.IssueFound === 'Yes' ?
+          isValidIssue(entry.IssueFound, entry.IssueLink) ?
           existingNicknameEntry.issues + 1 :
           existingNicknameEntry.issues;
         existingNicknameEntry.score = existingNicknameEntry.amount + 3 * existingNicknameEntry.issues;
