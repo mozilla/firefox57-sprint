@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: "List of Participants"
+title: "Participants"
 ---
 
 # Be proud of your participation
