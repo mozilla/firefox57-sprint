@@ -63,18 +63,24 @@
     });
   }
 
+  function sanitize(toSanitize) {
+    return toSanitize.trim().toLowerCase();
+  }
+
   function groupByNickname(entries) {
     var result = [];
 
     entries.forEach(function(entry) {
+      const sanitizedReportedSiteTested = sanitize(entry.SiteTested);
+
       const existingNicknameEntry = result.find(function(existingEntry) {
         return existingEntry.name === entry.Nickname;
       });
-      
+
       if (existingNicknameEntry) {
         // only count the same domain once
         const existingDomain = existingNicknameEntry.entries.find((existingEntry) => {
-          return entry.SiteTested == existingEntry.SiteTested;
+          return sanitizedReportedSiteTested == sanitize(existingEntry.SiteTested);
         });
 
         if (existingDomain) {
@@ -82,7 +88,7 @@
         }
 
         existingNicknameEntry.amount++;
-        existingNicknameEntry.issues = 
+        existingNicknameEntry.issues =
           entry.IssueFound === 'Yes' ?
           existingNicknameEntry.issues + 1 :
           existingNicknameEntry.issues;
