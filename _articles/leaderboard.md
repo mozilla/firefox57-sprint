@@ -5,7 +5,7 @@ title: "Participants"
 
 # Be proud of your participation
 
-<h2>We want to ensure that this is a good experience for both the attendees and the bug fixers. For that reason we decided to change the leaderboard with a list of people participating in the initiative. However, we would like to reward people based on the quality of their work and as a result <strong>the top 30 issues that the webcompat team consider as most imactful will rewarded with a t-shirt</strong>.</h2>
+<h2>We want to ensure that this is a good experience for both the attendees and the bug fixers. For that reason we decided to change the leaderboard with a list of people participating in the initiative. However, we would like to reward people based on the quality of their work and as a result <strong>the top 30 issues that the webcompat team consider as most impactful will rewarded with a t-shirt</strong>.</h2>
 
 <div class="content-box">
   <h3 class="content-title content-title--uppercase">
