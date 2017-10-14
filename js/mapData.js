@@ -1,23 +1,21 @@
-let map;
+var map;
 
 (function() {
   'use strict';
 
-  var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0';
-  var RANGE = 'A2:I';
-  var SPREADSHEET_ID = '11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA';
-  var publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID +
-    '/values/' + RANGE + '?key=' + API_KEY;
-  const API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ';
-  const API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + API_KEY_MAPS + '&callback=mapCallback';
+  var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0',
+      RANGE = 'A2:I',
+      SPREADSHEET_ID = '11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA',
+      publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID + '/values/' + RANGE + '?key=' + API_KEY;
+  const API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ',
+        API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + API_KEY_MAPS + '&callback=mapCallback';
 
   function getData() {
-    fetch(publicEndpoint)
-      .then(function(result) {
-        return result.json();
-      }).then(function(result) {
-        var data = result.values.map(function(entry) {
-          return {
+    fetch(publicEndpoint).then(function (result) {
+		return result.json();
+		}).then(function (result) {
+			var data = result.values.map(function (entry) {
+				return {
             Country: entry[1],
             City: entry[2],
             Date: entry[3],
@@ -26,7 +24,7 @@ let map;
             Lat: entry[7],
             Lng: entry[8]
           };
-        }).filter(function(entry) {
+        }).filter(function (entry) {
           return entry.Country;
         });
 
@@ -40,8 +38,8 @@ let map;
   }
 
   function drawMap(events) {
-    const hasContainerEventList = !!document.querySelector('.map-sites');
-    const hasContainerEventDetail = !!document.querySelector('.event-details');
+    const hasContainerEventList = !!document.querySelector('.map-sites'),
+	      hasContainerEventDetail = !!document.querySelector('.event-details');
     map = new GooleMapsMap(API_URL, events, getCountryCode, {
       hasContainerEventList: hasContainerEventList,
       hasContainerEventDetail: hasContainerEventDetail
@@ -55,7 +53,7 @@ let map;
     }
 
     var groupedByCountry = groupByCountry(events);
-    groupedByCountry.sort(function(a, b) {
+    groupedByCountry.sort(function (a, b) {
       if (a.name < b.name) {
         return -1;
       }
@@ -74,8 +72,8 @@ let map;
     }
 
     for (var country of groupedByCountry) {
-      var countryContainer = document.createElement('div');
-      var countryCode = getCountryCode(country.name);
+      var countryContainer = document.createElement('div'),
+     	  countryCode = getCountryCode(country.name);
 
       countryContainer.classList.add('col-country', 'col-lg-3', 'col-sm-4', 'col-xs-6');
       countryContainer.id = countryCode;
