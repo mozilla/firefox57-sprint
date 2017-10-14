@@ -25,5 +25,15 @@
   </div>
 </div>
 
-<script src="{{ site.baseurl }}/js/map.js"></script>
-<script src="{{ site.baseurl }}/js/mapData.js"></script>
+<!-- Make compatibility with Firefox 36-44 -->
+	<script src="{{ site.baseurl }}/js/detectBrowserVersion.js"></script> <!-- Path is ready to use -->
+	<script>
+		ecmaVersion = detectBrowser();
+		var firstPartPath = '<script src="{{ site.baseurl }}/js/'; //Path is ready to use.
+		switch (ecmaVersion) {
+			case 5: document.write(firstPartPath + 'mapECMA5.js"></script\>' + firstPartPath + 'mapDataECMA5.js"></script\>'); alert('Your browser is out-of-date.'); break;
+			case 6: document.write(firstPartPath + 'map.js"></script\>' + firstPartPath + 'mapData.js"></script\>'); break;
+			//case default: console.log('Scripts was not inserted. Something is wrong.'); break;
+		}
+	</script>
+<!-- End of compatibility -->
