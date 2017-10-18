@@ -7,8 +7,8 @@ var map;
       RANGE = 'A2:I',
       SPREADSHEET_ID = '11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA',
       publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID + '/values/' + RANGE + '?key=' + API_KEY;
-  const API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ',
-        API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + API_KEY_MAPS + '&callback=mapCallback';
+  var const_API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ',
+      const_API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + const_API_KEY_MAPS + '&callback=mapCallback';
 
   function getData() {
     fetch(publicEndpoint).then(function (result) {
@@ -38,17 +38,17 @@ var map;
   }
 
   function drawMap(events) {
-    const hasContainerEventList = !!document.querySelector('.map-sites'),
-	      hasContainerEventDetail = !!document.querySelector('.event-details');
-    map = new GooleMapsMap(API_URL, events, getCountryCode, {
-      hasContainerEventList: hasContainerEventList,
-      hasContainerEventDetail: hasContainerEventDetail
+    var const_hasContainerEventList = !!document.querySelector('.map-sites'),
+	    const_hasContainerEventDetail = !!document.querySelector('.event-details');
+    map = new GooleMapsMap(const_API_URL, events, ffQSprint.getCountryCode, {
+      hasContainerEventList: const_hasContainerEventList,
+      hasContainerEventDetail: const_hasContainerEventDetail
     });
   }
 
   function addEventList(events) {
-    const container = document.querySelector('.map-sites');
-    if (!container) {
+    var const_container = document.querySelector('.map-sites');
+    if (!const_container) {
       return;
     }
 
@@ -65,15 +65,15 @@ var map;
       return 0;
     });
 
-    const loading = document.querySelector('.loading');
+    var const_loading = document.querySelector('.loading'); //const loading
 
-    if (loading) {
-      loading.parentNode.removeChild(loading);
+    if (const_loading) {
+      loading.parentNode.removeChild(const_loading);
     }
 
     for (var country of groupedByCountry) {
       var countryContainer = document.createElement('div'),
-     	  countryCode = getCountryCode(country.name);
+     	  countryCode = ffQSprint.getCountryCode(country.name);
 
       countryContainer.classList.add('col-country', 'col-lg-3', 'col-sm-4', 'col-xs-6');
       countryContainer.id = countryCode;
