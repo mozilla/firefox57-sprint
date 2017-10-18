@@ -1,4 +1,5 @@
-function getCountryCode(countryName) {
+var ffQSprint = {
+	getCountryCode: function (countryName) {
 	// if we don't have the country in our list, we use the world icon directly
 	var countryCode = 'wrld',
         isoCountries = {
@@ -255,4 +256,5 @@ function getCountryCode(countryName) {
       countryCode = isoCountries[countryName].toLowerCase();
     }
     return countryCode;
+}
 }
