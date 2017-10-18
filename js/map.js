@@ -13,7 +13,7 @@ class GooleMapsMap {
     this.HOST_KEY = 'FullName';
     this.DATE_KEY = 'Date';
     this.MARKER_ICON = 'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2%7C6FB8D8';
-    this.getCountryCode = getCountryCode;
+    this.getCountryCode = ffQSprint.getCountryCode;
     this.linkCountry = options.hasContainerEventList;
     this.hasEventDetail = options.hasContainerEventDetail;
     this.markers = [];
@@ -86,5 +86,5 @@ class GooleMapsMap {
 
   }
 
-  ffQSprint.getStyles () //call to map.getStyles.js
+  //ffQSprint.getStyles () //call to map.getStyles.js
 }
