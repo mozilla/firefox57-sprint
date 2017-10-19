@@ -26,17 +26,8 @@
 </div>
 
 <!-- Make compatibility with Firefox 36-44 -->
-	<script src="{{ site.baseurl }}/js/map.getStyles.js"></script>
-	<script src="{{ site.baseurl }}/js/getCountryCode.js"></script>
-	<script src="{{ site.baseurl }}/js/detectBrowserVersion.js"></script>
 	<script>
-		ecmaVersion = detectBrowser();
 		var firstPartPath = '<script src="{{ site.baseurl }}/js/';
-		switch (ecmaVersion) {
-			case 5: document.write(firstPartPath + 'mapECMA5.js"></script\>'); break;
-			case 6: document.write(firstPartPath + 'map.js"></script\>'); break;
-			default: alert('Something gone wrong. Report to us: bugzilla.mozilla.org'); break;
-		}
-		document.write(firstPartPath + 'mapData.js"></script\>');
+		document.write(firstPartPath + 'map.getStyles.js"></script\>' + firstPartPath + 'getCountryCode.js"></script\>' + firstPartPath + 'map.js"></script\>' + firstPartPath + 'mapData.js"></script\>'); 
 	</script>
 <!-- End of compatibility -->
