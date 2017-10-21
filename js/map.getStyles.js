@@ -1,85 +1,84 @@
-//FirefoxSprint isn't here. Look for ffQSprint
-var ffQSprint = {
-	getStyles: function (mapStyles) {
-    return [
-      {
+  var ffQSprint = {
+    getStyles: function (mapStyles) {
+      return [
+        {
           "featureType": "administrative",
           "elementType": "labels.text.fill",
           "stylers": [
-              {
-                  "color": "#444444"
-              }
+            {
+              "color": "#444444"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "landscape",
           "elementType": "all",
           "stylers": [
-              {
-                  "color": "#f2f2f2"
-              }
+            {
+              "color": "#f2f2f2"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "poi",
           "elementType": "all",
           "stylers": [
-              {
-                  "visibility": "off"
-              }
+            {
+              "visibility": "off"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "road",
           "elementType": "all",
           "stylers": [
-              {
-                  "saturation": -100
-              },
-              {
-                  "lightness": 45
-              }
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "road.highway",
           "elementType": "all",
           "stylers": [
-              {
-                  "visibility": "simplified"
-              }
+            {
+              "visibility": "simplified"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "road.arterial",
           "elementType": "labels.icon",
           "stylers": [
-              {
-                  "visibility": "off"
-              }
+            {
+              "visibility": "off"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "transit",
           "elementType": "all",
           "stylers": [
-              {
-                  "visibility": "off"
-              }
+            {
+              "visibility": "off"
+            }
           ]
-      },
-      {
+        },
+        {
           "featureType": "water",
           "elementType": "all",
           "stylers": [
-              {
-                  "color": "#46bcec"
-              },
-              {
-                  "visibility": "on"
-              }
+            {
+              "color": "#46bcec"
+            },
+            {
+              "visibility": "on"
+            }
           ]
-      }
-    ];
+        }
+      ];
+    }
   }
-}
