@@ -2,17 +2,17 @@ let map;
 
 (function() {
   'use strict';
-  const API_KEY = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ';
-  const API_URL = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=mapCallback`;
 
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/11W6MYoIIJDTJz0LL_P9WzHqT-EXpv9Bih6dlFLdAnfA/edit?usp=sharing';
+  var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0';
+  var RANGE = 'A2:E';
+  var SPREADSHEET_ID = '1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY';
+  var publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID +
+    '/values/' + RANGE + '?key=' + API_KEY;
+  const API_KEY_MAPS = 'AIzaSyCtHdTVnmaA1ZQ-1wdaKoVEBtlTT020yXQ';
+  const API_URL = `https://maps.googleapis.com/maps/api/js?key=${API_KEY_MAPS}&callback=mapCallback`;
 
-  function initTabletop() {
-    Tabletop.init({
-      key: publicSpreadsheetUrl,
-      callback: processData,
-      simpleSheet: true
-    });
+  function getData() {
+
   }
 
   function processData(events) {
@@ -382,7 +382,7 @@ let map;
     return countryCode;
   }
 
-  window.addEventListener('DOMContentLoaded', initTabletop);
+  window.addEventListener('DOMContentLoaded', getData);
 })();
 
 function mapCallback() {

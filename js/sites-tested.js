@@ -4,7 +4,11 @@
   var END_DATE = new Date('2017-10-01');
   var today = new Date();
   var distance = END_DATE - today;
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY/pubhtml';
+  var API_KEY = 'AIzaSyDziLuMxVaWGuE4BVh-gxvuY9y7evusUx0';
+  var RANGE = 'A2:E';
+  var SPREADSHEET_ID = '1ddte9oFxtIIp9AzWe9oGwBIscokjvKoFx6WvAiQmznY';
+  var publicEndpoint = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID +
+    '/values/' + RANGE + '?key=' + API_KEY;
 
   // Only show sites tested while sprint is going on
   if (distance > 0) {
@@ -13,15 +17,27 @@
 
   var sitesTestedElement = document.querySelector('.sites-tested');
 
-  function initTabletop() {
-    Tabletop.init({
-      key: publicSpreadsheetUrl,
-      callback: processInfo,
-      simpleSheet: true
+  function getData() {
+    fetch(publicEndpoint)
+    .then(function(result) {
+      return result.json();
+    }).then(function(result) {
+      var data = result.values.map(function(entry) {
+        return {
+          Nickname: entry[1],
+          SiteTested: entry[2],
+          IssueFound: entry[3],
+          IssueLink: entry[4]
+        };
+      }).filter(function(entry) {
+        return entry.Nickname;
+      });
+
+      processInfo(data);
     });
   }
 
-  function processInfo(data, tabletop) {
+  function processInfo(data) {
     var testedSites = filterDuplicates(data);
     var uniqueTestedSites = getUnique(testedSites);
     var totalSitesTested = uniqueTestedSites.length;
@@ -54,5 +70,5 @@
     return result;
   }
 
-  window.addEventListener('DOMContentLoaded', initTabletop);
+  window.addEventListener('DOMContentLoaded', getData);
 })();
