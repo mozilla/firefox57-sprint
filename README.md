@@ -1,10 +1,12 @@
-# Firefox Quantum Sprint - heavily under construction (website and program)
+# Firefox Quantum Sprint
 
-This project is based on https://mozilla.github.io/global-sprint/.
+**Important:** Please do not report Firefox bugs in this repository! We have https://bugzilla.mozilla.org/ for that.
+
+This project is finished. You can still see the final website at http://firefoxsprint.mozilla.community/, but this repository is in read-only mode.
 
 ----
 
-## Getting Started
+## Running it locally
 
 To run this site locally you need to install [Jekyll](https://jekyllrb.com/), [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/).
 
@@ -16,7 +18,7 @@ To run this site locally you need to install [Jekyll](https://jekyllrb.com/), [R
 
 ## Contributing
 
-Thanks for your interest regarding contributing to the website! There are many ways to contribute. To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.MD).
+Thanks for your interest regarding contributing to the website! As this campaign is done, we do not need any more changes on the website and this repository is read-only. Maybe you might want to have a look at http://whatcanidoformozilla.org?
 
 ----
 
